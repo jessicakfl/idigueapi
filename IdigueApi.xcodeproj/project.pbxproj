@@ -14,6 +14,10 @@
 		785C81B82AB2824200AADBBF /* IdigueApi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 785C81B62AB2824200AADBBF /* IdigueApi.xcdatamodeld */; };
 		785C81BA2AB2824300AADBBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 785C81B92AB2824300AADBBF /* Assets.xcassets */; };
 		785C81BD2AB2824300AADBBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 785C81BB2AB2824300AADBBF /* LaunchScreen.storyboard */; };
+		785C81C52AB39E5B00AADBBF /* IdigueApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785C81C42AB39E5B00AADBBF /* IdigueApi.swift */; };
+		785C81C82AB39FB900AADBBF /* IdigueHttp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785C81C72AB39FB900AADBBF /* IdigueHttp.swift */; };
+		785C81CB2AB3A8B400AADBBF /* Idigue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785C81CA2AB3A8B400AADBBF /* Idigue.swift */; };
+		785C81CD2AB3A97A00AADBBF /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785C81CC2AB3A97A00AADBBF /* Image.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		785C81B92AB2824300AADBBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		785C81BC2AB2824300AADBBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		785C81BE2AB2824300AADBBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		785C81C42AB39E5B00AADBBF /* IdigueApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdigueApi.swift; sourceTree = "<group>"; };
+		785C81C72AB39FB900AADBBF /* IdigueHttp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdigueHttp.swift; sourceTree = "<group>"; };
+		785C81CA2AB3A8B400AADBBF /* Idigue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Idigue.swift; sourceTree = "<group>"; };
+		785C81CC2AB3A97A00AADBBF /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +66,36 @@
 		785C81AC2AB2824200AADBBF /* IdigueApi */ = {
 			isa = PBXGroup;
 			children = (
+				785C81C92AB3A87A00AADBBF /* model */,
 				785C81AD2AB2824200AADBBF /* AppDelegate.swift */,
 				785C81AF2AB2824200AADBBF /* SceneDelegate.swift */,
 				785C81B12AB2824200AADBBF /* ViewController.swift */,
 				785C81B32AB2824200AADBBF /* Main.storyboard */,
 				785C81B92AB2824300AADBBF /* Assets.xcassets */,
+				785C81B62AB2824200AADBBF /* IdigueApi.xcdatamodeld */,
 				785C81BB2AB2824300AADBBF /* LaunchScreen.storyboard */,
 				785C81BE2AB2824300AADBBF /* Info.plist */,
-				785C81B62AB2824200AADBBF /* IdigueApi.xcdatamodeld */,
+				785C81C62AB39F7700AADBBF /* networkservices */,
 			);
 			path = IdigueApi;
+			sourceTree = "<group>";
+		};
+		785C81C62AB39F7700AADBBF /* networkservices */ = {
+			isa = PBXGroup;
+			children = (
+				785C81C72AB39FB900AADBBF /* IdigueHttp.swift */,
+				785C81C42AB39E5B00AADBBF /* IdigueApi.swift */,
+			);
+			path = networkservices;
+			sourceTree = "<group>";
+		};
+		785C81C92AB3A87A00AADBBF /* model */ = {
+			isa = PBXGroup;
+			children = (
+				785C81CA2AB3A8B400AADBBF /* Idigue.swift */,
+				785C81CC2AB3A97A00AADBBF /* Image.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +169,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				785C81CB2AB3A8B400AADBBF /* Idigue.swift in Sources */,
+				785C81CD2AB3A97A00AADBBF /* Image.swift in Sources */,
 				785C81B22AB2824200AADBBF /* ViewController.swift in Sources */,
+				785C81C52AB39E5B00AADBBF /* IdigueApi.swift in Sources */,
 				785C81AE2AB2824200AADBBF /* AppDelegate.swift in Sources */,
 				785C81B02AB2824200AADBBF /* SceneDelegate.swift in Sources */,
+				785C81C82AB39FB900AADBBF /* IdigueHttp.swift in Sources */,
 				785C81B82AB2824200AADBBF /* IdigueApi.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
