@@ -16,8 +16,10 @@ class ViewController: UIViewController {
          override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupContainer()
-        loadData()
+             self.tableView.register(TableViewCell.self, forCellReuseIdentifier: "TableViewCell")
+             
+             setupContainer()
+             loadData()
     }
 
     func setupContainer(){
@@ -46,15 +48,15 @@ extension  ViewController: UITableViewDataSource, UITableViewDelegate {
             return images?.count ?? 0
         }
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-         let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableViewCell
+            let cell = self.tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableViewCell
          
             if let md = images?[indexPath.row] {
-                cell.idLbl.text = "ID: \(md.id ?? "")"
-                cell.nameLbl.text  = "Name: \(md.name ?? "")"
-                cell.editBtn.tag = indexPath.row
-                cell.deleteBtn.tag = indexPath.row
-                cell.editBtn.addTarget(self, action: #selector(updateData(_:)), for: .touchUpInside)
-                cell.deleteBtn.addTarget(self, action: #selector(deleteData(_:)), for: .touchUpInside)
+                cell.idLbl?.text = "ID: \(md.id ?? "")"
+                cell.nameLbl?.text  = "Name: \(md.name ?? "")"
+                //cell.editBtn.tag = indexPath.row
+                //cell.deleteBtn.tag = indexPath.row
+                //cell.editBtn.addTarget(self, action: #selector(updateData(_:)), for: .touchUpInside)
+                //cell.deleteBtn.addTarget(self, action: #selector(deleteData(_:)), for: .touchUpInside)
            }
           return cell
         }

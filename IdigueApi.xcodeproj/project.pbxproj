@@ -71,6 +71,7 @@
 				785C81C92AB3A87A00AADBBF /* model */,
 				785C81AD2AB2824200AADBBF /* AppDelegate.swift */,
 				785C81AF2AB2824200AADBBF /* SceneDelegate.swift */,
+				785C81CE2AB3B3C500AADBBF /* TableViewCell.swift */,
 				785C81B12AB2824200AADBBF /* ViewController.swift */,
 				785C81B32AB2824200AADBBF /* Main.storyboard */,
 				785C81B92AB2824300AADBBF /* Assets.xcassets */,
@@ -78,7 +79,6 @@
 				785C81BB2AB2824300AADBBF /* LaunchScreen.storyboard */,
 				785C81BE2AB2824300AADBBF /* Info.plist */,
 				785C81C62AB39F7700AADBBF /* networkservices */,
-				785C81CE2AB3B3C500AADBBF /* TableViewCell.swift */,
 			);
 			path = IdigueApi;
 			sourceTree = "<group>";
