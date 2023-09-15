@@ -16,7 +16,6 @@ class ViewController: UIViewController {
          override func viewDidLoad() {
         super.viewDidLoad()
         
-             self.tableView.register(TableViewCell.self, forCellReuseIdentifier: "TableViewCell")
              
              setupContainer()
              loadData()
@@ -25,12 +24,13 @@ class ViewController: UIViewController {
     func setupContainer(){
            self.tableView.delegate = self
            self.tableView.dataSource = self
-           self.tableView.reloadData()
+        self.tableView.register(TableViewCell.self, forCellReuseIdentifier: "TableViewCell")
+                   self.tableView.reloadData()
            self.tableView.separatorColor = UIColor.blue
        }
        
        func loadData() {
-           idiguehttp.getCustomerRequest(custId: "1") { success in
+           idiguehttp.getCustomerRequest() { success in
                print(success)
              
                if let md = success.images {
@@ -75,17 +75,17 @@ extension  ViewController: UITableViewDataSource, UITableViewDelegate {
                
                 alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
                 alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
-                //   guard let textId = alertController.textFields?.first?.text else {return}
+                   guard let textId = alertController.textFields?.first?.text else {return}
                     guard let textName = alertController.textFields?[0].text else {return}
-                    guard let textPhone = alertController.textFields?[1].text else {return}
-                    guard let textNote = alertController.textFields?[2].text else {return}
-                 print("\(textName)--\(textPhone)--\(textNote)")
+                    //guard let textPhone = alertController.textFields?[1].text else {return}
+                    //guard let textNote = alertController.textFields?[2].text else {return}
+                 //print("\(textName)--\(textPhone)--\(textNote)")
                    
                     let mBody: [String : Any] = [
                         "id"    : "\(md.id ?? "")",
-                        "name"  : "\(textName)",
-                        "phone" : "\(textPhone)",
-                        "note"  : "\(textNote)"
+                        "name"  : "\(textName)"
+                        //"phone" : "\(textPhone)",
+                        //"note"  : "\(textNote)"
                     ]
                   //self.idiguehttp.putUserData(body: mBody) { (userPutModel) in
                         //print("Success: \(userPutModel.result )")
