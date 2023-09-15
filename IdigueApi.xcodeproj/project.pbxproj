@@ -18,7 +18,7 @@
 		785C81C82AB39FB900AADBBF /* IdigueHttp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785C81C72AB39FB900AADBBF /* IdigueHttp.swift */; };
 		785C81CB2AB3A8B400AADBBF /* Idigue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785C81CA2AB3A8B400AADBBF /* Idigue.swift */; };
 		785C81CD2AB3A97A00AADBBF /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785C81CC2AB3A97A00AADBBF /* Image.swift */; };
-		785C81CF2AB3B3C500AADBBF /* Tableviewcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785C81CE2AB3B3C500AADBBF /* Tableviewcell.swift */; };
+		785C81CF2AB3B3C500AADBBF /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785C81CE2AB3B3C500AADBBF /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +35,7 @@
 		785C81C72AB39FB900AADBBF /* IdigueHttp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdigueHttp.swift; sourceTree = "<group>"; };
 		785C81CA2AB3A8B400AADBBF /* Idigue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Idigue.swift; sourceTree = "<group>"; };
 		785C81CC2AB3A97A00AADBBF /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
-		785C81CE2AB3B3C500AADBBF /* Tableviewcell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tableviewcell.swift; sourceTree = "<group>"; };
+		785C81CE2AB3B3C500AADBBF /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +78,7 @@
 				785C81BB2AB2824300AADBBF /* LaunchScreen.storyboard */,
 				785C81BE2AB2824300AADBBF /* Info.plist */,
 				785C81C62AB39F7700AADBBF /* networkservices */,
-				785C81CE2AB3B3C500AADBBF /* Tableviewcell.swift */,
+				785C81CE2AB3B3C500AADBBF /* TableViewCell.swift */,
 			);
 			path = IdigueApi;
 			sourceTree = "<group>";
@@ -180,7 +180,7 @@
 				785C81B02AB2824200AADBBF /* SceneDelegate.swift in Sources */,
 				785C81C82AB39FB900AADBBF /* IdigueHttp.swift in Sources */,
 				785C81B82AB2824200AADBBF /* IdigueApi.xcdatamodeld in Sources */,
-				785C81CF2AB3B3C500AADBBF /* Tableviewcell.swift in Sources */,
+				785C81CF2AB3B3C500AADBBF /* TableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
