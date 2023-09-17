@@ -8,8 +8,8 @@
 import UIKit
 
 class TableViewCell: UITableViewCell {
-    @IBOutlet weak var idLbl: UILabel!
-    @IBOutlet weak var nameLbl: UILabel!
+    @IBOutlet weak var lblid: UILabel!
+    @IBOutlet weak var lblname: UILabel!
     
     
     override func awakeFromNib() {

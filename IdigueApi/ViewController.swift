@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     func setupContainer(){
            self.tableView.delegate = self
            self.tableView.dataSource = self
-        self.tableView.register(TableViewCell.self, forCellReuseIdentifier: "TableViewCell")
+        //self.tableView.register(TableViewCell.self, forCellReuseIdentifier: "cell")
                    self.tableView.reloadData()
            self.tableView.separatorColor = UIColor.blue
        }
@@ -48,11 +48,11 @@ extension  ViewController: UITableViewDataSource, UITableViewDelegate {
             return images?.count ?? 0
         }
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell = self.tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableViewCell
+            let cell = self.tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
          
             if let md = images?[indexPath.row] {
-                cell.idLbl?.text = "ID: \(md.id ?? "")"
-                cell.nameLbl?.text  = "Name: \(md.name ?? "")"
+                cell.lblid?.text = "ID: \(md.id ?? "")"
+                cell.lblname?.text  = "Name: \(md.name ?? "")"
                 //cell.editBtn.tag = indexPath.row
                 //cell.deleteBtn.tag = indexPath.row
                 //cell.editBtn.addTarget(self, action: #selector(updateData(_:)), for: .touchUpInside)
