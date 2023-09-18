@@ -91,7 +91,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eu8-ju-kjJ">
-                                <rect key="frame" x="69" y="128" width="280" height="128"/>
+                                <rect key="frame" x="69" y="94" width="280" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="uBd-RR-iCO"/>
                                 </constraints>
@@ -102,12 +102,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HOp-Cb-Zqu">
-                                <rect key="frame" x="69" y="401" width="280" height="411"/>
+                                <rect key="frame" x="69" y="367" width="280" height="445"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Kowledgebases"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LMe-rE-GyH">
-                                <rect key="frame" x="69" y="266" width="280" height="125"/>
+                                <rect key="frame" x="69" y="232" width="280" height="125"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="125" id="lye-tP-vCX"/>
                                 </constraints>
@@ -118,7 +118,7 @@
                         <viewLayoutGuide key="safeArea" id="9ri-sR-u5C"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="eu8-ju-kjJ" firstAttribute="top" secondItem="9ri-sR-u5C" secondAttribute="top" constant="84" id="9R6-dd-syS"/>
+                            <constraint firstItem="eu8-ju-kjJ" firstAttribute="top" secondItem="9ri-sR-u5C" secondAttribute="top" constant="50" id="9R6-dd-syS"/>
                             <constraint firstItem="LMe-rE-GyH" firstAttribute="leading" secondItem="HOp-Cb-Zqu" secondAttribute="leading" id="CdP-Lm-rUH"/>
                             <constraint firstItem="HOp-Cb-Zqu" firstAttribute="top" secondItem="LMe-rE-GyH" secondAttribute="bottom" constant="10" id="ELp-wQ-o5v"/>
                             <constraint firstItem="eu8-ju-kjJ" firstAttribute="trailing" secondItem="LMe-rE-GyH" secondAttribute="trailing" id="Kda-6b-S1D"/>
