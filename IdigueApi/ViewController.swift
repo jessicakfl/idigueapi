@@ -42,7 +42,7 @@ class ViewController: UIViewController {
 extension  ViewController: UITableViewDataSource, UITableViewDelegate {
         
         func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-            return 120
+            return 60
         }
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             return images?.count ?? 0
@@ -51,8 +51,8 @@ extension  ViewController: UITableViewDataSource, UITableViewDelegate {
             let cell = self.tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
          
             if let md = images?[indexPath.row] {
-                cell.lblid?.text = "ID: \(md.id ?? "")"
-                cell.lblname?.text  = "Name: \(md.name ?? "")"
+                cell.lblid?.text = "Id: \(md.id ?? "")"
+                cell.lblname?.text  = "\(md.name ?? "")"
                 //cell.editBtn.tag = indexPath.row
                 //cell.deleteBtn.tag = indexPath.row
                 //cell.editBtn.addTarget(self, action: #selector(updateData(_:)), for: .touchUpInside)
