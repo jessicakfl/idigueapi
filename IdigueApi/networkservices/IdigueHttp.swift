@@ -33,4 +33,49 @@ class IdigueHttp: NSObject {
         }.resume()
          
     }
+    func getBlogRequest(completion: @escaping (_ success: Idigue) -> Void) {
+        
+        let fullUrl = IdigieApi.BLOGS_REQUEST// + "?page=\(custId)"
+        print(fullUrl)
+        var request = URLRequest(url: URL(string: fullUrl)!)
+        request.httpMethod = "GET"
+        request.timeoutInterval = 120 // 120 sec
+        
+        request.addValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
+        URLSession.shared.dataTask(with: request) { (data, response, error) in
+            guard let myData = data, error == nil else { return }
+            do {
+                print(myData)
+                let responseModel = try JSONDecoder().decode(Idigue.self, from: myData )
+                DispatchQueue.main.async {
+                    completion(responseModel)
+                }
+            } catch let err {
+                print(err)
+            }
+        }.resume()
+         
     }
+    func getKnowRequest(completion: @escaping (_ success: Idigue) -> Void) {
+        
+        let fullUrl = IdigieApi.KNOWS_REQUEST// + "?page=\(custId)"
+        print(fullUrl)
+        var request = URLRequest(url: URL(string: fullUrl)!)
+        request.httpMethod = "GET"
+        request.timeoutInterval = 120 // 120 sec
+        
+        request.addValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
+        URLSession.shared.dataTask(with: request) { (data, response, error) in
+            guard let myData = data, error == nil else { return }
+            do {
+                print(myData)
+                let responseModel = try JSONDecoder().decode(Idigue.self, from: myData )
+                DispatchQueue.main.async {
+                    completion(responseModel)
+                }
+            } catch let err {
+                print(err)
+            }
+        }.resume()
+         
+    }}
