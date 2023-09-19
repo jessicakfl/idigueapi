@@ -10,7 +10,7 @@ import UIKit
 
 class IdigueHttp: NSObject {
  
-    func getCustomerRequest(completion: @escaping (_ success: Idigue) -> Void) {
+    func getImageRequest(completion: @escaping (_ success: Idigue) -> Void) {
         
         let fullUrl = IdigieApi.CUSTOMER_REQUEST// + "?page=\(custId)"
         print(fullUrl)

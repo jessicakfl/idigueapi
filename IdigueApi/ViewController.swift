@@ -11,12 +11,15 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     private let idiguehttp = IdigueHttp()
-     
-     private var images : [Image]? = []
-         override func viewDidLoad() {
+      var itemstoshow=items.image
+    private var images : [Image]? = []
+    private var blogs : [Blog]? = []
+    private var knows : [Knowledgebase]? = []
+    
+    override func viewDidLoad() {
         super.viewDidLoad()
         
-             title = "images"
+        title = "\(itemstoshow)"
              setupContainer()
              loadData()
     }
@@ -25,20 +28,48 @@ class ViewController: UIViewController {
            self.tableView.delegate = self
            self.tableView.dataSource = self
         //self.tableView.register(TableViewCell.self, forCellReuseIdentifier: "cell")
-                   self.tableView.reloadData()
+           self.tableView.reloadData()
            self.tableView.separatorColor = UIColor.blue
        }
        
        func loadData() {
-           idiguehttp.getCustomerRequest() { success in
+           switch itemstoshow {
+           case .image:
+           idiguehttp.getImageRequest() {
+               success in
                print(success)
              
                if let md = success.images {
                    self.images = md
                }
              self.tableView.reloadData()
+           
            }
-       }}
+           case .blog:
+               idiguehttp.getBlogRequest() {
+                   success in
+                   print(success)
+                 
+                   if let md = success.blogs {
+                       self.blogs = md
+                   }
+                 self.tableView.reloadData()
+               
+               }
+           case .know:
+               idiguehttp.getKnowRequest() {
+                   success in
+                   print(success)
+                 
+                   if let md = success.knows {
+                       self.knows = md
+                   }
+                 self.tableView.reloadData()
+               
+               }
+           }
+    
+}}
 extension  ViewController: UITableViewDataSource, UITableViewDelegate {
         
         func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -49,15 +80,26 @@ extension  ViewController: UITableViewDataSource, UITableViewDelegate {
         }
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = self.tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
-         
-            if let md = images?[indexPath.row] {
-                cell.lblid?.text = "Id: \(md.id ?? "")"
-                cell.lblname?.text  = "\(md.name ?? "")"
-                //cell.editBtn.tag = indexPath.row
-                //cell.deleteBtn.tag = indexPath.row
-                //cell.editBtn.addTarget(self, action: #selector(updateData(_:)), for: .touchUpInside)
-                //cell.deleteBtn.addTarget(self, action: #selector(deleteData(_:)), for: .touchUpInside)
-           }
+            switch itemstoshow {
+            case .image:
+                if let md = images?[indexPath.row] {
+                    cell.lblid?.text = "Id: \(md.id ?? "")"
+                    cell.lblname?.text  = "\(md.name ?? "")"
+                   
+               }
+            case .blog:
+                if let md = blogs?[indexPath.row] {
+                    cell.lblid?.text = "Id: \(md.id ?? "")"
+                    cell.lblname?.text  = "\(md.contents ?? "")"
+                   
+               }
+            case .know:
+                if let md = knows?[indexPath.row] {
+                    cell.lblid?.text = "Id: \(md.id ?? "")"
+                    cell.lblname?.text  = "\(md.contents ?? "")"
+                   
+               }            }
+       
           return cell
         }
 
