@@ -70,10 +70,14 @@
                             <constraint firstItem="Ko5-MI-i4f" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nnE-pr-v0S"/>
                         </constraints>
                     </view>
-                    <toolbarItems>
-                        <barButtonItem title="add" id="m8y-Px-wXR"/>
-                    </toolbarItems>
-                    <navigationItem key="navigationItem" id="R9W-p0-fxE"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="R9W-p0-fxE">
+                        <barButtonItem key="rightBarButtonItem" title="Add" id="tax-MC-BSt">
+                            <connections>
+                                <action selector="adNew:" destination="BYZ-38-t0r" id="UnK-Yv-hwW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="Ko5-MI-i4f" id="uX7-ap-Jqo"/>

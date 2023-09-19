@@ -22,6 +22,7 @@
 		78CCD1142AB919ED00C0D4D9 /* Blog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CCD1132AB919ED00C0D4D9 /* Blog.swift */; };
 		78CCD1162AB91A0400C0D4D9 /* Knowledgebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CCD1152AB91A0400C0D4D9 /* Knowledgebase.swift */; };
 		78CCD1182AB923F000C0D4D9 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CCD1172AB923F000C0D4D9 /* StartViewController.swift */; };
+		78CCD11A2ABA3E7D00C0D4D9 /* ImageDataPostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CCD1192ABA3E7D00C0D4D9 /* ImageDataPostModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		78CCD1132AB919ED00C0D4D9 /* Blog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blog.swift; sourceTree = "<group>"; };
 		78CCD1152AB91A0400C0D4D9 /* Knowledgebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Knowledgebase.swift; sourceTree = "<group>"; };
 		78CCD1172AB923F000C0D4D9 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		78CCD1192ABA3E7D00C0D4D9 /* ImageDataPostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDataPostModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				785C81BB2AB2824300AADBBF /* LaunchScreen.storyboard */,
 				785C81BE2AB2824300AADBBF /* Info.plist */,
 				785C81C62AB39F7700AADBBF /* networkservices */,
+				78CCD1192ABA3E7D00C0D4D9 /* ImageDataPostModel.swift */,
 			);
 			path = IdigueApi;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				785C81B02AB2824200AADBBF /* SceneDelegate.swift in Sources */,
 				785C81C82AB39FB900AADBBF /* IdigueHttp.swift in Sources */,
 				78CCD1142AB919ED00C0D4D9 /* Blog.swift in Sources */,
+				78CCD11A2ABA3E7D00C0D4D9 /* ImageDataPostModel.swift in Sources */,
 				785C81B82AB2824200AADBBF /* IdigueApi.xcdatamodeld in Sources */,
 				785C81CF2AB3B3C500AADBBF /* TableViewCell.swift in Sources */,
 			);

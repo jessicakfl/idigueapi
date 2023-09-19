@@ -22,7 +22,38 @@ class ViewController: UIViewController {
         loadData()
         title = "\(idiguehttp.itemstoshow)"
     }
-
+    @IBAction func adNew(_ sender: Any) {
+        
+        let alertController = UIAlertController(title: "New Photo", message: "Add to Idigue", preferredStyle: .alert)
+        alertController.addTextField { textfield in
+            textfield.placeholder = "Photo Name..."
+         }
+        alertController.addTextField { (textField) in
+            textField.placeholder = "if public..."
+          }
+        alertController.addTextField { (textField) in
+            textField.placeholder = "Write your code..."
+          }
+        alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+            guard let textName = alertController.textFields?.first?.text else {return}
+            guard let textispublic = alertController.textFields?[1].text else {return}
+            guard let textcode = alertController.textFields?[2].text else {return}
+            
+            print("\(textName)--\(textispublic)--\(textcode)")
+            
+            let mBody: [String : Any] = [
+                "name"  : "\(textName)",
+                "ispublic" : "\(textispublic)",
+                "code"  : "\(textcode)"
+            ]
+           self.idiguehttp.postUserData(body: mBody) { (userPostModel) in
+                print("Success: \(userPostModel.result)")
+             self.loadData()
+          }
+      }))
+        self.present(alertController, animated: true)    }
+    
     
     func setupContainer(){
            self.tableView.delegate = self

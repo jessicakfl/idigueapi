@@ -78,4 +78,34 @@ class IdigueHttp: NSObject {
             }
         }.resume()
          
-    }}
+    }
+    
+    func postUserData(body: [String : Any],
+                         completion: @escaping (_ success: ImageDataPostModel) -> Void) {
+           
+           let fullUrl = IdigieApi.CUSTOMER_REQUEST
+           print(fullUrl)
+           var request = URLRequest(url: URL(string: fullUrl)!)
+           request.httpMethod = "POST"
+           request.timeoutInterval = 120 // 120 sec
+           
+           request.addValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
+           
+           let jsonData = try? JSONSerialization.data(withJSONObject: body)
+           request.httpBody = jsonData
+           
+           URLSession.shared.dataTask(with: request) { (data, response, error) in
+               guard let myData = data, error == nil else { return }
+               do {
+                   print(myData)
+                   let responseModel = try JSONDecoder().decode(ImageDataPostModel.self, from: myData )
+                   DispatchQueue.main.async {
+                       completion(responseModel)
+                   }
+               } catch let err {
+                   print(err)
+               }
+           }.resume()
+            
+       } // postUserData
+       }
