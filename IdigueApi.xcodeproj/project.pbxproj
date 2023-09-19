@@ -19,8 +19,6 @@
 		785C81CB2AB3A8B400AADBBF /* Idigue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785C81CA2AB3A8B400AADBBF /* Idigue.swift */; };
 		785C81CD2AB3A97A00AADBBF /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785C81CC2AB3A97A00AADBBF /* Image.swift */; };
 		785C81CF2AB3B3C500AADBBF /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785C81CE2AB3B3C500AADBBF /* TableViewCell.swift */; };
-		78CCD1102AB9139300C0D4D9 /* BlogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CCD10F2AB9139300C0D4D9 /* BlogTableViewController.swift */; };
-		78CCD1122AB913F200C0D4D9 /* KnowTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CCD1112AB913F200C0D4D9 /* KnowTableViewController.swift */; };
 		78CCD1142AB919ED00C0D4D9 /* Blog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CCD1132AB919ED00C0D4D9 /* Blog.swift */; };
 		78CCD1162AB91A0400C0D4D9 /* Knowledgebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CCD1152AB91A0400C0D4D9 /* Knowledgebase.swift */; };
 		78CCD1182AB923F000C0D4D9 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CCD1172AB923F000C0D4D9 /* StartViewController.swift */; };
@@ -41,8 +39,6 @@
 		785C81CA2AB3A8B400AADBBF /* Idigue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Idigue.swift; sourceTree = "<group>"; };
 		785C81CC2AB3A97A00AADBBF /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		785C81CE2AB3B3C500AADBBF /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		78CCD10F2AB9139300C0D4D9 /* BlogTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogTableViewController.swift; sourceTree = "<group>"; };
-		78CCD1112AB913F200C0D4D9 /* KnowTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowTableViewController.swift; sourceTree = "<group>"; };
 		78CCD1132AB919ED00C0D4D9 /* Blog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blog.swift; sourceTree = "<group>"; };
 		78CCD1152AB91A0400C0D4D9 /* Knowledgebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Knowledgebase.swift; sourceTree = "<group>"; };
 		78CCD1172AB923F000C0D4D9 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
@@ -85,8 +81,6 @@
 				785C81B12AB2824200AADBBF /* ViewController.swift */,
 				785C81B32AB2824200AADBBF /* Main.storyboard */,
 				78CCD1172AB923F000C0D4D9 /* StartViewController.swift */,
-				78CCD1112AB913F200C0D4D9 /* KnowTableViewController.swift */,
-				78CCD10F2AB9139300C0D4D9 /* BlogTableViewController.swift */,
 				785C81B92AB2824300AADBBF /* Assets.xcassets */,
 				785C81B62AB2824200AADBBF /* IdigueApi.xcdatamodeld */,
 				785C81BB2AB2824300AADBBF /* LaunchScreen.storyboard */,
@@ -189,12 +183,10 @@
 			files = (
 				785C81CB2AB3A8B400AADBBF /* Idigue.swift in Sources */,
 				78CCD1182AB923F000C0D4D9 /* StartViewController.swift in Sources */,
-				78CCD1102AB9139300C0D4D9 /* BlogTableViewController.swift in Sources */,
 				785C81CD2AB3A97A00AADBBF /* Image.swift in Sources */,
 				78CCD1162AB91A0400C0D4D9 /* Knowledgebase.swift in Sources */,
 				785C81B22AB2824200AADBBF /* ViewController.swift in Sources */,
 				785C81C52AB39E5B00AADBBF /* IdigueApi.swift in Sources */,
-				78CCD1122AB913F200C0D4D9 /* KnowTableViewController.swift in Sources */,
 				785C81AE2AB2824200AADBBF /* AppDelegate.swift in Sources */,
 				785C81B02AB2824200AADBBF /* SceneDelegate.swift in Sources */,
 				785C81C82AB39FB900AADBBF /* IdigueHttp.swift in Sources */,

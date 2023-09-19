@@ -10,20 +10,20 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    private let idiguehttp = IdigueHttp()
-      var itemstoshow=items.image
+    let idiguehttp = IdigueHttp()
+    
     private var images : [Image]? = []
     private var blogs : [Blog]? = []
     private var knows : [Knowledgebase]? = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        title = "\(itemstoshow)"
-             setupContainer()
-             loadData()
+        setupContainer()
+        loadData()
+        title = "\(idiguehttp.itemstoshow)"
     }
 
+    
     func setupContainer(){
            self.tableView.delegate = self
            self.tableView.dataSource = self
@@ -33,7 +33,7 @@ class ViewController: UIViewController {
        }
        
        func loadData() {
-           switch itemstoshow {
+           switch idiguehttp.itemstoshow {
            case .image:
            idiguehttp.getImageRequest() {
                success in
@@ -80,7 +80,7 @@ extension  ViewController: UITableViewDataSource, UITableViewDelegate {
         }
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = self.tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
-            switch itemstoshow {
+            switch idiguehttp.itemstoshow {
             case .image:
                 if let md = images?[indexPath.row] {
                     cell.lblid?.text = "Id: \(md.id ?? "")"

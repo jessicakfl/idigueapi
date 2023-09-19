@@ -6,11 +6,9 @@
 //
 
 import UIKit
-enum items {
-    case image
-    case blog
-    case know
-}
+
+enum items { case image, blog, know }
+
 class StartViewController: UIViewController {
  
     
@@ -29,7 +27,22 @@ class StartViewController: UIViewController {
         if (segue.identifier == "image") {
 
             if let viewController: ViewController = segue.destination as? ViewController {
-                            viewController.itemstoshow = items.image
+               viewController.idiguehttp.itemstoshow = items.image
+                        }
+
+                    }
+        else if (segue.identifier == "blog") {
+
+            if let viewController: ViewController = segue.destination as? ViewController {
+                viewController.idiguehttp.itemstoshow = items.blog
+               
+            }
+
+                    }
+        else if (segue.identifier == "know") {
+
+        if let viewController: ViewController = segue.destination as? ViewController {
+            viewController.idiguehttp.itemstoshow = items.know
                         }
 
                     }
