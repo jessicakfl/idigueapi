@@ -94,7 +94,7 @@ class IdigueHttp: NSObject {
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         do {
             let jsonData = try JSONEncoder().encode(body)
-        request.httpBody = jsonData
+            request.httpBody = jsonData
         }
            catch {
                fatalError("unable to convert data to JSON")
