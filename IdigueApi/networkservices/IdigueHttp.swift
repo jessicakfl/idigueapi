@@ -80,32 +80,42 @@ class IdigueHttp: NSObject {
          
     }
     
-    func postUserData(body: [String : Any],
-                         completion: @escaping (_ success: ImageDataPostModel) -> Void) {
+    func postImageData(body: ImagePost,
+                         completion: @escaping (_ success: ImagePost) -> Void) {
            
-           let fullUrl = IdigieApi.CUSTOMER_REQUEST
+           let fullUrl = IdigieApi.IMAGE_POST
            print(fullUrl)
            var request = URLRequest(url: URL(string: fullUrl)!)
            request.httpMethod = "POST"
            request.timeoutInterval = 120 // 120 sec
            
-           request.addValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
            
-           let jsonData = try? JSONSerialization.data(withJSONObject: body)
-           request.httpBody = jsonData
-           
-           URLSession.shared.dataTask(with: request) { (data, response, error) in
-               guard let myData = data, error == nil else { return }
-               do {
-                   print(myData)
-                   let responseModel = try JSONDecoder().decode(ImageDataPostModel.self, from: myData )
-                   DispatchQueue.main.async {
-                       completion(responseModel)
-                   }
-               } catch let err {
-                   print(err)
-               }
-           }.resume()
+        request.setValue("application/json", forHTTPHeaderField: "Accept")
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        do {
+            let jsonData = try JSONEncoder().encode(body)
+        request.httpBody = jsonData
+        }
+           catch {
+               fatalError("unable to convert data to JSON")
+           }
+        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
             
-       } // postUserData
+            if let error = error {
+                print("Error took place \(error)")
+                return
+            }
+            guard let data = data else {return}
+
+            do{
+                let ip = try JSONDecoder().decode(ImagePost.self, from: data)
+                print("Response data:\n \(ip)")
+            }catch let jsonErr{
+                print(jsonErr)
+           }
+
+     
+    }
+    task.resume()
        }
+    }

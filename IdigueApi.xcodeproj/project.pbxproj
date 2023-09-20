@@ -23,6 +23,7 @@
 		78CCD1162AB91A0400C0D4D9 /* Knowledgebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CCD1152AB91A0400C0D4D9 /* Knowledgebase.swift */; };
 		78CCD1182AB923F000C0D4D9 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CCD1172AB923F000C0D4D9 /* StartViewController.swift */; };
 		78CCD11A2ABA3E7D00C0D4D9 /* ImageDataPostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CCD1192ABA3E7D00C0D4D9 /* ImageDataPostModel.swift */; };
+		78CCD11C2ABA727F00C0D4D9 /* ImagePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CCD11B2ABA727F00C0D4D9 /* ImagePost.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		78CCD1152AB91A0400C0D4D9 /* Knowledgebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Knowledgebase.swift; sourceTree = "<group>"; };
 		78CCD1172AB923F000C0D4D9 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		78CCD1192ABA3E7D00C0D4D9 /* ImageDataPostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDataPostModel.swift; sourceTree = "<group>"; };
+		78CCD11B2ABA727F00C0D4D9 /* ImagePost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePost.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				785C81CC2AB3A97A00AADBBF /* Image.swift */,
 				78CCD1132AB919ED00C0D4D9 /* Blog.swift */,
 				78CCD1152AB91A0400C0D4D9 /* Knowledgebase.swift */,
+				78CCD11B2ABA727F00C0D4D9 /* ImagePost.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				78CCD11A2ABA3E7D00C0D4D9 /* ImageDataPostModel.swift in Sources */,
 				785C81B82AB2824200AADBBF /* IdigueApi.xcdatamodeld in Sources */,
 				785C81CF2AB3B3C500AADBBF /* TableViewCell.swift in Sources */,
+				78CCD11C2ABA727F00C0D4D9 /* ImagePost.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

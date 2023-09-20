@@ -6,7 +6,6 @@
 //
 
 import UIKit
-
 class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
@@ -42,15 +41,13 @@ class ViewController: UIViewController {
             
             print("\(textName)--\(textispublic)--\(textcode)")
             
-            let mBody: [String : Any] = [
-                "name"  : "\(textName)",
-                "ispublic" : "\(textispublic)",
-                "code"  : "\(textcode)"
-            ]
-           self.idiguehttp.postUserData(body: mBody) { (userPostModel) in
-                print("Success: \(userPostModel.result)")
-             self.loadData()
-          }
+            let imagepost = ImagePost(name: textName, code: textcode, completed: true)
+            self.idiguehttp.postImageData(body: imagepost) { success in
+                print("Success: \(imagepost)")
+                self.loadData()
+                
+            }
+           
       }))
         self.present(alertController, animated: true)    }
     
