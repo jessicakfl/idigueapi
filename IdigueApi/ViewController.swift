@@ -41,7 +41,7 @@ class ViewController: UIViewController {
             
             print("\(textName)--\(textispublic)--\(textcode)")
             
-            let imagepost = ImagePost(name: textName, code: textcode, completed: true)
+            let imagepost = ImagePost(name: textName, ispublic: textispublic, code: textcode, completed: true)
             self.idiguehttp.postImageData(body: imagepost) { success in
                 print("Success: \(imagepost)")
                 self.loadData()

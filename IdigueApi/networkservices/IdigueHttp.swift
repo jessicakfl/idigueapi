@@ -87,33 +87,26 @@ class IdigueHttp: NSObject {
            print(fullUrl)
            var request = URLRequest(url: URL(string: fullUrl)!)
            request.httpMethod = "POST"
-           request.timeoutInterval = 120 // 120 sec
+           //request.timeoutInterval = 120 // 120 sec
            
            
-        request.setValue("application/json", forHTTPHeaderField: "Accept")
-        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        do {
-            let jsonData = try JSONEncoder().encode(body)
-            request.httpBody = jsonData
-        }
-           catch {
-               fatalError("unable to convert data to JSON")
-           }
+        //request.setValue("application/json", forHTTPHeaderField: "Accept")
+        //request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+            let postString = "name=w&ispublic=0&code=0";
+
+            // Set HTTP Request Body
+            request.httpBody = postString.data(using: String.Encoding.utf8);
+       
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
             
             if let error = error {
                 print("Error took place \(error)")
                 return
             }
-            guard let data = data else {return}
-
-            do{
-                let ip = try JSONDecoder().decode(ImagePost.self, from: data)
-                print("Response data:\n \(ip)")
-            }catch let jsonErr{
-                print(jsonErr)
-           }
-
+            if let data = data, let dataString = String(data: data, encoding: .utf8) {
+                      print("Response data string:\n \(dataString)")
+                  }
      
     }
     task.resume()

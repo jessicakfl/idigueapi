@@ -9,7 +9,7 @@ import Foundation
 
 struct ImagePost: Codable {
     var name    : String? = ""
-    var ispublic  : Int? = 0
+    var ispublic  : String? = ""
     var code  : String? = ""
     var completed: Bool
     
