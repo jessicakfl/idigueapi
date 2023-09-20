@@ -55,7 +55,6 @@ class ViewController: UIViewController {
     func setupContainer(){
            self.tableView.delegate = self
            self.tableView.dataSource = self
-        //self.tableView.register(TableViewCell.self, forCellReuseIdentifier: "cell")
            self.tableView.reloadData()
            self.tableView.separatorColor = UIColor.blue
        }
@@ -135,8 +134,6 @@ extension  ViewController: UITableViewDataSource, UITableViewDelegate {
             if let md = images?[sender.tag] {
                 // todo show alert to update data
                 let alertController = UIAlertController(title: "Update", message: "Update Your Information", preferredStyle: .alert)
-    //            alertController.addTextField { textfield in
-    //                textfield.placeholder = "ID..."
     //            }
                     alertController.addTextField { (textField) in
                         textField.placeholder = "Your Name..."
@@ -147,24 +144,13 @@ extension  ViewController: UITableViewDataSource, UITableViewDelegate {
                 alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
                    guard let textId = alertController.textFields?.first?.text else {return}
                     guard let textName = alertController.textFields?[0].text else {return}
-                    //guard let textPhone = alertController.textFields?[1].text else {return}
-                    //guard let textNote = alertController.textFields?[2].text else {return}
-                 //print("\(textName)--\(textPhone)--\(textNote)")
                    
                     let mBody: [String : Any] = [
                         "id"    : "\(md.id ?? "")",
                         "name"  : "\(textName)"
-                        //"phone" : "\(textPhone)",
-                        //"note"  : "\(textNote)"
                     ]
-                  //self.idiguehttp.putUserData(body: mBody) { (userPutModel) in
-                        //print("Success: \(userPutModel.result )")
-                        //self.loadMyData()
-                  //}
              }))
                 self.present(alertController, animated: true)
-                // when click on ok call update api
-                // call get api to refresh data
            }
         }
 
@@ -189,8 +175,7 @@ extension  ViewController: UITableViewDataSource, UITableViewDelegate {
                     //}
             }))
                 self.present(alertController, animated: true)
-                // when click on ok call update api
-                // call get api to refresh data
-                
             }
-        }        }
+        }
+    
+}

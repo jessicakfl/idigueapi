@@ -87,15 +87,9 @@ class IdigueHttp: NSObject {
            print(fullUrl)
            var request = URLRequest(url: URL(string: fullUrl)!)
            request.httpMethod = "POST"
-           //request.timeoutInterval = 120 // 120 sec
-           
-           
-        //request.setValue("application/json", forHTTPHeaderField: "Accept")
-        //request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        
-            let postString = "name=w&ispublic=0&code=0";
-
-            // Set HTTP Request Body
+        let postString = "name=\(body.name!)&ispublic=\(body.ispublic!)&code=\(body.code!)";
+        print(postString)
+        // Set HTTP Request Body
             request.httpBody = postString.data(using: String.Encoding.utf8);
        
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
