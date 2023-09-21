@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 class IdigueHttp: NSObject {
-    var itemstoshow = items.image
+    
     func getImageRequest(completion: @escaping (_ success: Idigue) -> Void) {
         
         let fullUrl = IdigieApi.CUSTOMER_REQUEST// + "?page=\(custId)"

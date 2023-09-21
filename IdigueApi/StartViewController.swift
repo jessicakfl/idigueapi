@@ -32,13 +32,13 @@ class StartViewController: UIViewController {
         if (segue.identifier == "image") {
 
             if let viewController: ViewController = segue.destination as? ViewController {
-               viewController.idiguehttp.itemstoshow = items.image
+               viewController.itemstoshow = "image"
                         }
                 }
         else if (segue.identifier == "blog") {
 
             if let viewController: ViewController = segue.destination as? ViewController {
-                viewController.idiguehttp.itemstoshow = items.blog
+                viewController.itemstoshow = "blog"
                
             }
 
@@ -46,7 +46,7 @@ class StartViewController: UIViewController {
         else if (segue.identifier == "know") {
 
         if let viewController: ViewController = segue.destination as? ViewController {
-            viewController.idiguehttp.itemstoshow = items.know
+            viewController.itemstoshow = "know"
                         }
 
                     }

@@ -15,5 +15,5 @@ class IdigieApi {
     
     static let CUSTOMER_REQUEST = BASE_URL + V1 + "api.php"
     static let BLOGS_REQUEST = BASE_URL + V1 + "apiblogs.php"
-    static let KNOWS_REQUEST = BASE_URL + V1 + "apiknows.php"
+    static let KNOWS_REQUEST = BASE_URL + V1 + "apiknowledgebases.php"
     static let IMAGE_POST = BASE_URL + V1 + "apiimagenew.php"}

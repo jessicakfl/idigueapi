@@ -7,7 +7,7 @@
 
 import UIKit
 class ViewController: UIViewController {
-    
+    var itemstoshow = "know"
     @IBOutlet weak var tableView: UITableView!
     let idiguehttp = IdigueHttp()
     
@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         setupContainer()
         loadData()
-        title = "\(idiguehttp.itemstoshow)"
+        title = "\(itemstoshow)"
     }
     @IBAction func adNew(_ sender: Any) {
         
@@ -60,8 +60,8 @@ class ViewController: UIViewController {
        }
        
        func loadData() {
-           switch idiguehttp.itemstoshow {
-           case .image:
+           switch itemstoshow {
+           case "image":
            idiguehttp.getImageRequest() {
                success in
                print(success)
@@ -72,7 +72,7 @@ class ViewController: UIViewController {
              self.tableView.reloadData()
            
            }
-           case .blog:
+           case "blog":
                idiguehttp.getBlogRequest() {
                    success in
                    print(success)
@@ -83,7 +83,7 @@ class ViewController: UIViewController {
                  self.tableView.reloadData()
                
                }
-           case .know:
+           case "know":
                idiguehttp.getKnowRequest() {
                    success in
                    print(success)
@@ -94,9 +94,20 @@ class ViewController: UIViewController {
                  self.tableView.reloadData()
                
                }
+           default:
+               idiguehttp.getImageRequest() {
+                   success in
+                   print(success)
+                 
+                   if let md = success.images {
+                       self.images = md
+                   }
+                 self.tableView.reloadData()
+                   
+               }
            }
-    
-}}
+       }       }
+           
 extension  ViewController: UITableViewDataSource, UITableViewDelegate {
         
         func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -107,27 +118,34 @@ extension  ViewController: UITableViewDataSource, UITableViewDelegate {
         }
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = self.tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
-            switch idiguehttp.itemstoshow {
-            case .image:
+            switch itemstoshow {
+            case "image":
                 if let md = images?[indexPath.row] {
                     cell.lblid?.text = "Id: \(md.id ?? "")"
                     cell.lblname?.text  = "\(md.name ?? "")"
                    
                }
-            case .blog:
+            case "blog":
                 if let md = blogs?[indexPath.row] {
-                    cell.lblid?.text = "Id: \(md.id ?? "")"
+                    cell.lblid?.text = "Id: \(md.id ?? 0)"
                     cell.lblname?.text  = "\(md.contents ?? "")"
                    
                }
-            case .know:
+            case "know":
                 if let md = knows?[indexPath.row] {
-                    cell.lblid?.text = "Id: \(md.id ?? "")"
+                    cell.lblid?.text = "Id: \(md.id ?? 0)"
                     cell.lblname?.text  = "\(md.contents ?? "")"
                    
-               }            }
-       
-          return cell
+               }
+            default:
+                if let md = images?[indexPath.row] {
+                    cell.lblid?.text = "Id: \(md.id ?? "")"
+                    cell.lblname?.text  = "\(md.name ?? "")"
+                }
+                
+            }
+      
+                  return cell
         }
 
         @objc func updateData(_ sender: UIButton) {
