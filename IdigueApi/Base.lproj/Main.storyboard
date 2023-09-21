@@ -95,6 +95,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HOp-Cb-Zqu">
+                                <rect key="frame" x="69" y="367" width="280" height="445"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Kowledgebases"/>
+                                <connections>
+                                    <segue destination="Tw8-uh-wkw" kind="show" identifier="know" id="dkE-Lf-gvs"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eu8-ju-kjJ">
                                 <rect key="frame" x="69" y="94" width="280" height="128"/>
                                 <constraints>
@@ -104,14 +112,6 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Images"/>
                                 <connections>
                                     <segue destination="Tw8-uh-wkw" kind="show" identifier="image" id="vKL-WD-W7L"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HOp-Cb-Zqu">
-                                <rect key="frame" x="69" y="367" width="280" height="445"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Kowledgebases"/>
-                                <connections>
-                                    <segue destination="Tw8-uh-wkw" kind="show" identifier="know" id="dkE-Lf-gvs"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LMe-rE-GyH">

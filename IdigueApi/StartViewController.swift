@@ -34,8 +34,7 @@ class StartViewController: UIViewController {
             if let viewController: ViewController = segue.destination as? ViewController {
                viewController.idiguehttp.itemstoshow = items.image
                         }
-
-                    }
+                }
         else if (segue.identifier == "blog") {
 
             if let viewController: ViewController = segue.destination as? ViewController {
