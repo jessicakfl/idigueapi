@@ -9,7 +9,7 @@ import Foundation
 
 class IdigieApi {
     
-    static let BASE_URL = "http://idigue.com/api/"
+    public static var BASE_URL = "http://idigue.com/api/"
     
     static let V1 = ""
     

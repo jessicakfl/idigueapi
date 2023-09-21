@@ -125,6 +125,30 @@
                                     <segue destination="Tw8-uh-wkw" kind="show" identifier="blog" id="5hY-CE-63k"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1qD-qx-LK9">
+                                <rect key="frame" x="69" y="44" width="229" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="229" id="TJj-Pc-4Au"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Server URL">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" metaFont="smallSystem"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6d-ki-jeQ">
+                                <rect key="frame" x="306" y="44" width="43" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Set"/>
+                                <connections>
+                                    <action selector="btnseturl:" destination="f5C-1w-yWt" eventType="touchUpInside" id="QQC-6H-R3y"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9ri-sR-u5C"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -132,19 +156,27 @@
                             <constraint firstItem="eu8-ju-kjJ" firstAttribute="top" secondItem="9ri-sR-u5C" secondAttribute="top" constant="50" id="9R6-dd-syS"/>
                             <constraint firstItem="LMe-rE-GyH" firstAttribute="leading" secondItem="HOp-Cb-Zqu" secondAttribute="leading" id="CdP-Lm-rUH"/>
                             <constraint firstItem="HOp-Cb-Zqu" firstAttribute="top" secondItem="LMe-rE-GyH" secondAttribute="bottom" constant="10" id="ELp-wQ-o5v"/>
+                            <constraint firstItem="c6d-ki-jeQ" firstAttribute="leading" secondItem="1qD-qx-LK9" secondAttribute="trailing" constant="8" id="EPA-Hs-oRq"/>
+                            <constraint firstItem="1qD-qx-LK9" firstAttribute="leading" secondItem="eu8-ju-kjJ" secondAttribute="leading" id="Hzf-hr-bwT"/>
                             <constraint firstItem="eu8-ju-kjJ" firstAttribute="trailing" secondItem="LMe-rE-GyH" secondAttribute="trailing" id="Kda-6b-S1D"/>
+                            <constraint firstItem="1qD-qx-LK9" firstAttribute="bottom" secondItem="c6d-ki-jeQ" secondAttribute="bottom" constant="3" id="QBx-Pe-d13"/>
                             <constraint firstItem="9ri-sR-u5C" firstAttribute="trailing" secondItem="eu8-ju-kjJ" secondAttribute="trailing" constant="65" id="cIF-kj-czh"/>
+                            <constraint firstItem="1qD-qx-LK9" firstAttribute="top" secondItem="9ri-sR-u5C" secondAttribute="top" id="d78-ZA-YQs"/>
                             <constraint firstItem="LMe-rE-GyH" firstAttribute="leading" secondItem="9ri-sR-u5C" secondAttribute="leading" constant="69" id="hy4-E6-DO2"/>
                             <constraint firstItem="9ri-sR-u5C" firstAttribute="bottom" secondItem="HOp-Cb-Zqu" secondAttribute="bottom" constant="50" id="myu-4y-lYN"/>
+                            <constraint firstItem="9ri-sR-u5C" firstAttribute="trailing" secondItem="c6d-ki-jeQ" secondAttribute="trailing" constant="65" id="n49-uz-Xlb"/>
                             <constraint firstItem="LMe-rE-GyH" firstAttribute="top" secondItem="eu8-ju-kjJ" secondAttribute="bottom" constant="10" id="pbI-5D-kcD"/>
                             <constraint firstItem="eu8-ju-kjJ" firstAttribute="leading" secondItem="LMe-rE-GyH" secondAttribute="leading" id="tce-Uv-ZQO"/>
                             <constraint firstItem="LMe-rE-GyH" firstAttribute="trailing" secondItem="HOp-Cb-Zqu" secondAttribute="trailing" id="xGf-Ku-aKT"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="txturl" destination="1qD-qx-LK9" id="Msx-eB-Wlp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pZA-hj-TQC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1067" y="210"/>
+            <point key="canvasLocation" x="-1068.1159420289855" y="209.59821428571428"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jEu-wU-qNe">

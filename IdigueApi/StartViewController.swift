@@ -10,7 +10,12 @@ import UIKit
 enum items { case image, blog, know }
 
 class StartViewController: UIViewController {
- 
+    @IBOutlet weak var txturl: UITextField!
+    
+    @IBAction func btnseturl(_ sender: Any) {
+        IdigieApi.BASE_URL=txturl!.text ?? "http://idigue.com/api/"
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
