@@ -9,7 +9,7 @@ import Foundation
 
 struct Knowledgebase: Codable {
 
-  var id    : Int? = 0
+    var id    : String? = ""
     var title  : String? = ""
     var contents  : String? = ""
     var keywords  : String? = ""
@@ -28,7 +28,7 @@ struct Knowledgebase: Codable {
   init(from decoder: Decoder) throws {
     let values = try decoder.container(keyedBy: CodingKeys.self)
 
-    id    = try values.decodeIfPresent(Int.self , forKey: .id    )
+    id    = try values.decodeIfPresent(String.self , forKey: .id    )
     title  = try values.decodeIfPresent(String.self , forKey: .title  )
     contents  = try values.decodeIfPresent(String.self , forKey: .contents  )
       keywords  = try values.decodeIfPresent(String.self , forKey: .keywords  )

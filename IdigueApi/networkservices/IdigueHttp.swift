@@ -45,7 +45,7 @@ class IdigueHttp: NSObject {
         URLSession.shared.dataTask(with: request) { (data, response, error) in
             guard let myData = data, error == nil else { return }
             do {
-                print(myData)
+                print(myData.description)
                 let responseModel = try JSONDecoder().decode(Idigue.self, from: myData )
                 DispatchQueue.main.async {
                     completion(responseModel)

@@ -69,8 +69,8 @@ class ViewController: UIViewController {
                if let md = success.images {
                    self.images = md
                }
-             self.tableView.reloadData()
-           
+               self.tableView.reloadData()
+               
            }
            case "blog":
                idiguehttp.getBlogRequest() {
@@ -80,8 +80,8 @@ class ViewController: UIViewController {
                    if let md = success.blogs {
                        self.blogs = md
                    }
-                 self.tableView.reloadData()
-               
+                   self.tableView.reloadData()
+                   
                }
            case "know":
                idiguehttp.getKnowRequest() {
@@ -91,9 +91,7 @@ class ViewController: UIViewController {
                    if let md = success.knows {
                        self.knows = md
                    }
-                 self.tableView.reloadData()
-               
-               }
+                   self.tableView.reloadData()               }
            default:
                idiguehttp.getImageRequest() {
                    success in
@@ -102,10 +100,12 @@ class ViewController: UIViewController {
                    if let md = success.images {
                        self.images = md
                    }
-                 self.tableView.reloadData()
+                   self.tableView.reloadData()
                    
                }
+               
            }
+           
        }       }
            
 extension  ViewController: UITableViewDataSource, UITableViewDelegate {
@@ -114,8 +114,19 @@ extension  ViewController: UITableViewDataSource, UITableViewDelegate {
             return 60
         }
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return images?.count ?? 0
+            switch itemstoshow {
+            case "image":
+                return images?.count ?? 0
+            case "blog":
+                return blogs?.count ?? 0
+            case "know":
+                return knows?.count ?? 0
+            default:
+                return images?.count ?? 0
+                
+            }
         }
+    
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = self.tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
             switch itemstoshow {
@@ -128,13 +139,13 @@ extension  ViewController: UITableViewDataSource, UITableViewDelegate {
             case "blog":
                 if let md = blogs?[indexPath.row] {
                     cell.lblid?.text = "Id: \(md.id ?? 0)"
-                    cell.lblname?.text  = "\(md.contents ?? "")"
+                    cell.lblname?.text  = "\(md.title ?? "")"
                    
                }
             case "know":
                 if let md = knows?[indexPath.row] {
-                    cell.lblid?.text = "Id: \(md.id ?? 0)"
-                    cell.lblname?.text  = "\(md.contents ?? "")"
+                    cell.lblid?.text = "Id: \(md.id ?? "")"
+                    cell.lblname?.text  = "\(md.title ?? "")"
                    
                }
             default:
