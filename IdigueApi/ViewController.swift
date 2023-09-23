@@ -7,7 +7,7 @@
 
 import UIKit
 class ViewController: UIViewController {
-    var itemstoshow = "know"
+    var itemstoshow = "image"
     @IBOutlet weak var tableView: UITableView!
     let idiguehttp = IdigueHttp()
     
@@ -17,10 +17,17 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //setupContainer()
+        //loadData()
+
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         setupContainer()
         loadData()
         title = "\(itemstoshow)"
     }
+    
     @IBAction func adNew(_ sender: Any) {
         
         let alertController = UIAlertController(title: "New Photo", message: "Add to Idigue", preferredStyle: .alert)
