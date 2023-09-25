@@ -7,7 +7,7 @@
 
 import UIKit
 class ViewController: UIViewController {
-    var itemstoshow = "blog"
+    var itemstoshow = "image"
     
     @IBAction func btnBack(_ sender: Any) {
         self.navigationController?.dismiss(animated: true)
@@ -92,7 +92,7 @@ class ViewController: UIViewController {
            
       }))
         self.present(alertController, animated: true)
-        case "Know":
+        case "know":
             let alertController = UIAlertController(title: "New "+itemstoshow, message: "Add to Idigue", preferredStyle: .alert)
         alertController.addTextField { textfield in
             textfield.placeholder = "Name..."
