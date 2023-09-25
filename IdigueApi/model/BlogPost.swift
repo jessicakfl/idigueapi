@@ -7,7 +7,6 @@
 
 import Foundation
 struct BlogPost: Codable {
-    var name    : String? = ""
     var title  : String? = ""
     var contents  : String? = ""
     var completed: Bool
