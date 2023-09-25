@@ -7,7 +7,7 @@
 
 import UIKit
 class ViewController: UIViewController {
-    var itemstoshow = "image"
+    var itemstoshow = "blog"
     
     @IBAction func btnBack(_ sender: Any) {
         self.navigationController?.dismiss(animated: true)
@@ -35,10 +35,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func adNew(_ sender: Any) {
-        
-        let alertController = UIAlertController(title: "New Photo", message: "Add to Idigue", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "New "+itemstoshow, message: "Add to Idigue", preferredStyle: .alert)
         alertController.addTextField { textfield in
-            textfield.placeholder = "Photo Name..."
+            textfield.placeholder = "Name..."
          }
         alertController.addTextField { (textField) in
             textField.placeholder = "if public..."
@@ -151,7 +150,7 @@ extension  ViewController: UITableViewDataSource, UITableViewDelegate {
                }
             case "blog":
                 if let md = blogs?[indexPath.row] {
-                    cell.lblid?.text = "Id: \(md.id ?? 0)"
+                    cell.lblid?.text = "Id: \(md.id ?? "")"
                     cell.lblname?.text  = "\(md.title ?? "")"
                    
                }

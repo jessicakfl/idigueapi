@@ -9,7 +9,7 @@ import Foundation
 
 struct Blog: Codable {
 
-    var id    : Int? = 0
+    var id    : String? = ""
     var title  : String? = ""
     var contents  : String? = ""
 
@@ -22,7 +22,7 @@ struct Blog: Codable {
     init(from decoder: Decoder) throws {
       let values = try decoder.container(keyedBy: CodingKeys.self)
 
-      id    = try values.decodeIfPresent(Int.self , forKey: .id    )
+      id    = try values.decodeIfPresent(String.self , forKey: .id    )
       title  = try values.decodeIfPresent(String.self , forKey: .title  )
       contents  = try values.decodeIfPresent(String.self , forKey: .contents  )    }
 
