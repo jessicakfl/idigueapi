@@ -76,10 +76,10 @@ class ViewController: UIViewController {
         alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
             
-            guard let texttitle = alertController.textFields?[1].text else {return}
-            guard let textcontents = alertController.textFields?[2].text else {return}
+            guard let texttitle = alertController.textFields?[0].text else {return}
+            guard let textcontents = alertController.textFields?[1].text else {return}
             
-            print("(texttitle)--\(textcontents)")
+            print("\(texttitle)--\(textcontents)")
             
             let blogpost = BlogPost(title: texttitle, contents: textcontents, completed: true)
             self.idiguehttp.postBlogData(body: blogpost) { success in
@@ -103,10 +103,10 @@ class ViewController: UIViewController {
             alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
             alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
                 
-                guard let texttitle = alertController.textFields?[1].text else {return}
-                guard let textcontents = alertController.textFields?[2].text else {return}
+                guard let texttitle = alertController.textFields?[0].text else {return}
+                guard let textcontents = alertController.textFields?[1].text else {return}
                 
-                print("(texttitle)--\(textcontents)")
+                print("\(texttitle)--\(textcontents)")
                 
                 let knowpost = KnowPost(title: texttitle, contents: textcontents, completed: true)
                 self.idiguehttp.postKnowData(body: knowpost) { success in
@@ -131,8 +131,8 @@ class ViewController: UIViewController {
         alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
             guard let textName = alertController.textFields?.first?.text else {return}
-            guard let textispublic = alertController.textFields?[1].text else {return}
-            guard let textcode = alertController.textFields?[2].text else {return}
+            guard let textispublic = alertController.textFields?[0].text else {return}
+            guard let textcode = alertController.textFields?[1].text else {return}
             
             print("\(textName)--\(textispublic)--\(textcode)")
             

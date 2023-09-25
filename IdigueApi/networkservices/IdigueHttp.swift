@@ -114,7 +114,7 @@ class IdigueHttp: NSObject {
            print(fullUrl)
            var request = URLRequest(url: URL(string: fullUrl)!)
            request.httpMethod = "POST"
-        let postString = "title\(body.title!)&contents=\(body.contents!)";
+        let postString = "title=\(body.title!)&contents=\(body.contents!)";
         print(postString)
         // Set HTTP Request Body
             request.httpBody = postString.data(using: String.Encoding.utf8);
