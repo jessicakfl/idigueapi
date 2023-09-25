@@ -35,7 +35,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func adNew(_ sender: Any) {
-        let alertController = UIAlertController(title: "New "+itemstoshow, message: "Add to Idigue", preferredStyle: .alert)
+        switch itemstoshow {
+        case "image":
+            let alertController = UIAlertController(title: "New Image", message: "Add to Idigue", preferredStyle: .alert)
         alertController.addTextField { textfield in
             textfield.placeholder = "Name..."
          }
@@ -61,7 +63,94 @@ class ViewController: UIViewController {
             }
            
       }))
-        self.present(alertController, animated: true)    }
+        self.present(alertController, animated: true)
+        case "blog":
+            let alertController = UIAlertController(title: "New blog", message: "Add to Idigue", preferredStyle: .alert)
+        alertController.addTextField { textfield in
+            textfield.placeholder = "Name..."
+         }
+        alertController.addTextField { (textField) in
+            textField.placeholder = "title..."
+          }
+        alertController.addTextField { (textField) in
+            textField.placeholder = "Write contents..."
+          }
+        alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+            guard let textName = alertController.textFields?.first?.text else {return}
+            guard let texttitle = alertController.textFields?[1].text else {return}
+            guard let textcontents = alertController.textFields?[2].text else {return}
+            
+            print("\(textName)--\(texttitle)--\(textcontents)")
+            
+            let blogpost = BlogPost(name: textName, title: texttitle, contents: textcontents, completed: true)
+            self.idiguehttp.postBlogData(body: blogpost) { success in
+                print("Success: \(blogpost)")
+                self.loadData()
+                
+            }
+           
+      }))
+        self.present(alertController, animated: true)
+        case "Know":
+            let alertController = UIAlertController(title: "New "+itemstoshow, message: "Add to Idigue", preferredStyle: .alert)
+        alertController.addTextField { textfield in
+            textfield.placeholder = "Name..."
+         }
+        alertController.addTextField { (textField) in
+            textField.placeholder = "title..."
+          }
+        alertController.addTextField { (textField) in
+            textField.placeholder = "contents..."
+          }
+        alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+            guard let textName = alertController.textFields?.first?.text else {return}
+            guard let texttitle = alertController.textFields?[1].text else {return}
+            guard let textcontents = alertController.textFields?[2].text else {return}
+            
+            print("\(textName)--\(texttitle)--\(textcontents)")
+            
+            let knowpost = KnowPost(name: textName, title: texttitle, contents: textcontents, completed: true)
+            self.idiguehttp.postKnowData(body: knowpost) { success in
+                print("Success: \(knowpost)")
+                self.loadData()
+                
+            }
+           
+      }))
+        self.present(alertController, animated: true)
+        default:
+            let alertController = UIAlertController(title: "New "+itemstoshow, message: "Add to Idigue", preferredStyle: .alert)
+        alertController.addTextField { textfield in
+            textfield.placeholder = "Name..."
+         }
+        alertController.addTextField { (textField) in
+            textField.placeholder = "if public..."
+          }
+        alertController.addTextField { (textField) in
+            textField.placeholder = "Write your code..."
+          }
+        alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+            guard let textName = alertController.textFields?.first?.text else {return}
+            guard let textispublic = alertController.textFields?[1].text else {return}
+            guard let textcode = alertController.textFields?[2].text else {return}
+            
+            print("\(textName)--\(textispublic)--\(textcode)")
+            
+            let imagepost = ImagePost(name: textName, ispublic: textispublic, code: textcode, completed: true)
+            self.idiguehttp.postImageData(body: imagepost) { success in
+                print("Success: \(imagepost)")
+                self.loadData()
+                
+            }
+           
+      }))
+        self.present(alertController, animated: true)
+        }
+        
+    }
     
     
     func setupContainer(){

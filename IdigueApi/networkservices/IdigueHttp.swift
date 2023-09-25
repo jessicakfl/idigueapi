@@ -33,6 +33,7 @@ class IdigueHttp: NSObject {
         }.resume()
          
     }
+    
     func getBlogRequest(completion: @escaping (_ success: Idigue) -> Void) {
         
         let fullUrl = IdigieApi.BLOGS_REQUEST// + "?page=\(custId)"
@@ -105,4 +106,55 @@ class IdigueHttp: NSObject {
     }
     task.resume()
        }
+    
+    func postBlogData(body: BlogPost,
+                         completion: @escaping (_ success: BlogPost) -> Void) {
+           
+           let fullUrl = IdigieApi.BLOG_POST
+           print(fullUrl)
+           var request = URLRequest(url: URL(string: fullUrl)!)
+           request.httpMethod = "POST"
+        let postString = "name=\(body.name!)&title\(body.title!)&contents=\(body.contents!)";
+        print(postString)
+        // Set HTTP Request Body
+            request.httpBody = postString.data(using: String.Encoding.utf8);
+       
+        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+            
+            if let error = error {
+                print("Error took place \(error)")
+                return
+            }
+            if let data = data, let dataString = String(data: data, encoding: .utf8) {
+                      print("Response data string:\n \(dataString)")
+                  }
+     
     }
+    task.resume()
+       }
+    
+    func postKnowData(body: KnowPost,
+                         completion: @escaping (_ success: KnowPost) -> Void) {
+           
+           let fullUrl = IdigieApi.KNOW_POST
+           print(fullUrl)
+           var request = URLRequest(url: URL(string: fullUrl)!)
+           request.httpMethod = "POST"
+        let postString = "name=\(body.name!)&title=\(body.title!)&contents=\(body.contents!)";
+        print(postString)
+        // Set HTTP Request Body
+            request.httpBody = postString.data(using: String.Encoding.utf8);
+       
+        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+            
+            if let error = error {
+                print("Error took place \(error)")
+                return
+            }
+            if let data = data, let dataString = String(data: data, encoding: .utf8) {
+                      print("Response data string:\n \(dataString)")
+                  }
+     
+    }
+    task.resume()
+       }}

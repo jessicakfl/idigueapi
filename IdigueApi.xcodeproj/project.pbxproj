@@ -24,6 +24,8 @@
 		78CCD1182AB923F000C0D4D9 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CCD1172AB923F000C0D4D9 /* StartViewController.swift */; };
 		78CCD11A2ABA3E7D00C0D4D9 /* ImageDataPostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CCD1192ABA3E7D00C0D4D9 /* ImageDataPostModel.swift */; };
 		78CCD11C2ABA727F00C0D4D9 /* ImagePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CCD11B2ABA727F00C0D4D9 /* ImagePost.swift */; };
+		78CCD11E2AC230B100C0D4D9 /* KnowPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CCD11D2AC230B100C0D4D9 /* KnowPost.swift */; };
+		78CCD1202AC230F000C0D4D9 /* BlogPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CCD11F2AC230F000C0D4D9 /* BlogPost.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		78CCD1172AB923F000C0D4D9 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		78CCD1192ABA3E7D00C0D4D9 /* ImageDataPostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDataPostModel.swift; sourceTree = "<group>"; };
 		78CCD11B2ABA727F00C0D4D9 /* ImagePost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePost.swift; sourceTree = "<group>"; };
+		78CCD11D2AC230B100C0D4D9 /* KnowPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowPost.swift; sourceTree = "<group>"; };
+		78CCD11F2AC230F000C0D4D9 /* BlogPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPost.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,8 @@
 				78CCD1132AB919ED00C0D4D9 /* Blog.swift */,
 				78CCD1152AB91A0400C0D4D9 /* Knowledgebase.swift */,
 				78CCD11B2ABA727F00C0D4D9 /* ImagePost.swift */,
+				78CCD11D2AC230B100C0D4D9 /* KnowPost.swift */,
+				78CCD11F2AC230F000C0D4D9 /* BlogPost.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -190,6 +196,7 @@
 				785C81CB2AB3A8B400AADBBF /* Idigue.swift in Sources */,
 				78CCD1182AB923F000C0D4D9 /* StartViewController.swift in Sources */,
 				785C81CD2AB3A97A00AADBBF /* Image.swift in Sources */,
+				78CCD1202AC230F000C0D4D9 /* BlogPost.swift in Sources */,
 				78CCD1162AB91A0400C0D4D9 /* Knowledgebase.swift in Sources */,
 				785C81B22AB2824200AADBBF /* ViewController.swift in Sources */,
 				785C81C52AB39E5B00AADBBF /* IdigueApi.swift in Sources */,
@@ -199,6 +206,7 @@
 				78CCD1142AB919ED00C0D4D9 /* Blog.swift in Sources */,
 				78CCD11A2ABA3E7D00C0D4D9 /* ImageDataPostModel.swift in Sources */,
 				785C81B82AB2824200AADBBF /* IdigueApi.xcdatamodeld in Sources */,
+				78CCD11E2AC230B100C0D4D9 /* KnowPost.swift in Sources */,
 				785C81CF2AB3B3C500AADBBF /* TableViewCell.swift in Sources */,
 				78CCD11C2ABA727F00C0D4D9 /* ImagePost.swift in Sources */,
 			);
