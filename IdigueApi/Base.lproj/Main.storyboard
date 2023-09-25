@@ -72,6 +72,11 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="R9W-p0-fxE">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="ESS-3q-TSj">
+                            <connections>
+                                <action selector="btnBack:" destination="BYZ-38-t0r" id="bpq-oy-Lcj"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Add" id="tax-MC-BSt">
                             <connections>
                                 <action selector="adNew:" destination="BYZ-38-t0r" id="UnK-Yv-hwW"/>
@@ -85,7 +90,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="564" y="202"/>
+            <point key="canvasLocation" x="181" y="232"/>
         </scene>
         <!--Start View Controller-->
         <scene sceneID="GpU-2y-GXj">

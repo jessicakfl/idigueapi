@@ -8,6 +8,12 @@
 import UIKit
 class ViewController: UIViewController {
     var itemstoshow = "image"
+    
+    @IBAction func btnBack(_ sender: Any) {
+        self.navigationController?.dismiss(animated: true)
+    }
+    
+    
     @IBOutlet weak var tableView: UITableView!
     let idiguehttp = IdigueHttp()
     
