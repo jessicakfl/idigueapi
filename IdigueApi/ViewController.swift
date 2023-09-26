@@ -6,10 +6,11 @@
 //
 
 import UIKit
-var itemstoshow = "image"
+
 class ViewController: UIViewController {
     
-    
+    var itemstoshow = "image"
+
     @IBAction func btnBack(_ sender: Any) {
         self.navigationController?.dismiss(animated: true)
     }
