@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var itemstoshow = "image"
+    
 
     @IBAction func btnBack(_ sender: Any) {
         self.navigationController?.dismiss(animated: true)
@@ -25,19 +25,22 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //title = "\(itemstoshow)"
         //setupContainer()
         //loadData()
 
     }
+ 
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        title = "\(IdigueHttp.itemstoshow)"
         setupContainer()
         loadData()
-        title = "\(itemstoshow)"
     }
     
     @IBAction func adNew(_ sender: Any) {
-        switch itemstoshow {
+        switch IdigueHttp.itemstoshow {
         case "image":
             let alertController = UIAlertController(title: "New Image", message: "Add to Idigue", preferredStyle: .alert)
         alertController.addTextField { textfield in
@@ -120,7 +123,7 @@ class ViewController: UIViewController {
           }))
         self.present(alertController, animated: true)
         default:
-            let alertController = UIAlertController(title: "New "+itemstoshow, message: "Add to Idigue", preferredStyle: .alert)
+            let alertController = UIAlertController(title: "New "+IdigueHttp.itemstoshow, message: "Add to Idigue", preferredStyle: .alert)
         alertController.addTextField { textfield in
             textfield.placeholder = "Name..."
          }
@@ -160,7 +163,7 @@ class ViewController: UIViewController {
        }
        
        func loadData() {
-           switch itemstoshow {
+           switch IdigueHttp.itemstoshow {
            case "image":
            idiguehttp.getImageRequest() {
                success in
@@ -214,7 +217,7 @@ extension  ViewController: UITableViewDataSource, UITableViewDelegate {
             return 60
         }
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            switch itemstoshow {
+            switch IdigueHttp.itemstoshow {
             case "image":
                 return images?.count ?? 0
             case "blog":
@@ -229,7 +232,7 @@ extension  ViewController: UITableViewDataSource, UITableViewDelegate {
     
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = self.tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
-            switch itemstoshow {
+            switch IdigueHttp.itemstoshow {
             case "image":
                 if let md = images?[indexPath.row] {
                     cell.lblid?.text = "Id: \(md.id ?? "")"

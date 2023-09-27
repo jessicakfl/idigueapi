@@ -105,7 +105,8 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Kowledgebases"/>
                                 <connections>
-                                    <segue destination="Tw8-uh-wkw" kind="show" identifier="know" id="dkE-Lf-gvs"/>
+                                    <action selector="btnknow:" destination="f5C-1w-yWt" eventType="touchUpInside" id="ajk-J5-BRc"/>
+                                    <segue destination="Tw8-uh-wkw" kind="show" identifier="know" id="xV6-sA-bd5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eu8-ju-kjJ">
@@ -116,7 +117,8 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Images"/>
                                 <connections>
-                                    <segue destination="Tw8-uh-wkw" kind="show" identifier="image" id="vKL-WD-W7L"/>
+                                    <action selector="btnimage:" destination="f5C-1w-yWt" eventType="touchUpInside" id="9Fo-Pf-6cy"/>
+                                    <segue destination="Tw8-uh-wkw" kind="show" identifier="image" id="mRr-pH-OPf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LMe-rE-GyH">
@@ -127,7 +129,8 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Bogs"/>
                                 <connections>
-                                    <segue destination="Tw8-uh-wkw" kind="show" identifier="blog" id="5hY-CE-63k"/>
+                                    <action selector="btnblog:" destination="f5C-1w-yWt" eventType="touchUpInside" id="ydz-Ot-Uam"/>
+                                    <segue destination="Tw8-uh-wkw" kind="show" identifier="blog" id="ooA-fK-cBB"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="http://ip.com" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1qD-qx-LK9">
@@ -204,7 +207,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="vKL-WD-W7L"/>
+        <segue reference="xV6-sA-bd5"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
