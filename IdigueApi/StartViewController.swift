@@ -16,10 +16,13 @@ class StartViewController: UIViewController {
         
     }
     
-    @IBAction func btnseturl(_ sender: Any) {
+    @IBAction func btnseturl(_ sender: UIButton) {
         IdigieApi.BASE_URL=txturl!.text ?? "http://idigue.com/api/"
         
     }
+  
+    
+    
     
     @IBAction func btnblog(_ sender: UIButton) {
         IdigueHttp.itemstoshow="blog"
