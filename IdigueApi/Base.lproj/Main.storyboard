@@ -57,6 +57,7 @@
                                         <connections>
                                             <outlet property="lblid" destination="G1E-Ep-ekP" id="Dhn-yq-bQx"/>
                                             <outlet property="lblname" destination="7a1-8p-psY" id="9tP-tB-3bo"/>
+                                            <segue destination="2kE-HF-wPx" kind="show" identifier="showimage" id="yfo-L5-usT"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -92,6 +93,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="181" y="232"/>
+        </scene>
+        <!--Image View Controller-->
+        <scene sceneID="nMk-et-YKM">
+            <objects>
+                <viewController id="2kE-HF-wPx" customClass="ImageViewController" customModule="IdigueApi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vGQ-k1-ncS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sk3-1k-Fa1" customClass="IdigueImageView" customModule="IdigueApi" customModuleProvider="target">
+                                <rect key="frame" x="5" y="76" width="404" height="756"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="O0e-Yl-5q9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="O0e-Yl-5q9" firstAttribute="bottom" secondItem="sk3-1k-Fa1" secondAttribute="bottom" constant="5" id="M5P-xk-QXU"/>
+                            <constraint firstItem="sk3-1k-Fa1" firstAttribute="top" secondItem="O0e-Yl-5q9" secondAttribute="top" constant="20" id="ZrH-oh-I6B"/>
+                            <constraint firstItem="O0e-Yl-5q9" firstAttribute="trailing" secondItem="sk3-1k-Fa1" secondAttribute="trailing" constant="5" id="fEA-nl-gcP"/>
+                            <constraint firstItem="sk3-1k-Fa1" firstAttribute="leading" secondItem="O0e-Yl-5q9" secondAttribute="leading" constant="5" id="iWA-IK-qZT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="VfX-A6-FOi"/>
+                    <connections>
+                        <outlet property="idigueimageview" destination="sk3-1k-Fa1" id="JGe-ny-leg"/>
+                        <outlet property="imageview" destination="sk3-1k-Fa1" id="pMJ-fK-qub"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FHW-sX-qdH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="857" y="639"/>
         </scene>
         <!--Start View Controller-->
         <scene sceneID="GpU-2y-GXj">

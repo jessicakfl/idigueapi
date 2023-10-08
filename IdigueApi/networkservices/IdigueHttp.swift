@@ -12,7 +12,7 @@ class IdigueHttp: NSObject {
     public static var itemstoshow = "image"
     func getImageRequest(completion: @escaping (_ success: Idigue) -> Void) {
         
-        let fullUrl = IdigieApi.CUSTOMER_REQUEST// + "?page=\(custId)"
+        let fullUrl = IdigieApi.CUSTOMER_REQUEST
         print(fullUrl)
         var request = URLRequest(url: URL(string: fullUrl)!)
         request.httpMethod = "GET"

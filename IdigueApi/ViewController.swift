@@ -8,30 +8,36 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
-    
-
-    @IBAction func btnBack(_ sender: Any) {
-        self.navigationController?.dismiss(animated: true)
-    }
-    
-    
-    @IBOutlet weak var tableView: UITableView!
-    let idiguehttp = IdigueHttp()
-    
+    let imageSegueIdentifier = "showimage"
     private var images : [Image]? = []
     private var blogs : [Blog]? = []
     private var knows : [Knowledgebase]? = []
     
+    @IBAction func btnBack(_ sender: Any) {
+        self.navigationController?.dismiss(animated: true)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if  segue.identifier == imageSegueIdentifier,
+                let destination = segue.destination as? ImageViewController,
+                let selectedimage = tableView.indexPathForSelectedRow?.row
+            {
+                destination.imagename = images![selectedimage].name!
+            }
+        }
+    
+    @IBOutlet weak var tableView: UITableView!
+    let idiguehttp = IdigueHttp()
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("rows: \(indexPath.row)")
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        //title = "\(itemstoshow)"
-        //setupContainer()
-        //loadData()
-
     }
  
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         title = "\(IdigueHttp.itemstoshow)"

@@ -21,9 +21,6 @@ class StartViewController: UIViewController {
         
     }
   
-    
-    
-    
     @IBAction func btnblog(_ sender: UIButton) {
         IdigueHttp.itemstoshow="blog"
         
@@ -40,7 +37,6 @@ class StartViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
     override func performSegue(withIdentifier identifier: String, sender: Any?) {
         super.performSegue(withIdentifier: identifier, sender: self)
         
