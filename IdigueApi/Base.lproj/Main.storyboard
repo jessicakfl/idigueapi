@@ -118,7 +118,6 @@
                     <navigationItem key="navigationItem" id="VfX-A6-FOi"/>
                     <connections>
                         <outlet property="idigueimageview" destination="sk3-1k-Fa1" id="JGe-ny-leg"/>
-                        <outlet property="imageview" destination="sk3-1k-Fa1" id="pMJ-fK-qub"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FHW-sX-qdH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

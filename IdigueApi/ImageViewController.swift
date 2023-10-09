@@ -15,7 +15,24 @@ class ImageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        let view = UIView()
+        view.backgroundColor = .white
+        
+        let catImage = UIImage(named: "IMG_1249.jpeg")
+        
+        let myImageView:UIImageView = UIImageView()
+        myImageView.contentMode = UIView.ContentMode.scaleAspectFit
+        myImageView.frame.size.width = 300
+        myImageView.frame.size.height = 350
+        myImageView.center = self.view.center
+        
+        myImageView.image = catImage
+        
+        view.addSubview(myImageView)
+        
+        self.view = view
+        
+        
     }
     
 
