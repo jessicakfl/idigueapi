@@ -23,7 +23,7 @@ class ViewController: UIViewController {
                 let selectedimage = tableView.indexPathForSelectedRow?.row
             {
                 destination.imagename = images![selectedimage].name!
-            }
+                destination.base64EncodedImageString = images![selectedimage].imagebinary!            }
         }
     
     @IBOutlet weak var tableView: UITableView!
