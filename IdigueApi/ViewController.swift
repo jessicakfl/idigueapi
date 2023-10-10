@@ -26,7 +26,12 @@ class ViewController: UIViewController {
                     destination.imagename = images![selectedimage].name!
                     destination.base64EncodedImageString = images![selectedimage].imagebinary!
                 }
+                if IdigueHttp.itemstoshow=="blog"{
+                    destination.contents=blogs![selectedimage].contents!
                 }
+                if IdigueHttp.itemstoshow=="know"{
+                    destination.contents=knows![selectedimage].contents!
+                }                }
         }
     
     @IBOutlet weak var tableView: UITableView!

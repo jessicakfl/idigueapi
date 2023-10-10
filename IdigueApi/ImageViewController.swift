@@ -11,7 +11,10 @@ import UIKit
 
 class ImageViewController: UIViewController {
     @IBOutlet weak var idigueimageview: IdigueImageView!
+    
+    @IBOutlet weak var lblcontents: UILabel!
     var imagename=""
+    var contents=""
     var base64EncodedImageString=""
     
     override func viewDidLoad() {
@@ -23,7 +26,6 @@ class ImageViewController: UIViewController {
             let uiimage = UIImage(data: imageData) {
             print(uiimage.size)
                 //let catImage = UIImage(named: "IMG_1249.jpeg")
-        
         let myImageView:UIImageView = UIImageView()
         myImageView.contentMode = UIView.ContentMode.scaleAspectFit
         myImageView.frame.size.width = 300

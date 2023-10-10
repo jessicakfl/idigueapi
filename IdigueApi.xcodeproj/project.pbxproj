@@ -72,6 +72,7 @@
 		785C81A12AB2824200AADBBF = {
 			isa = PBXGroup;
 			children = (
+				78BEC04E2AD4D987001FB8AE /* support */,
 				78BEC04B2AD4B92B001FB8AE /* pic */,
 				785C81AC2AB2824200AADBBF /* IdigueApi */,
 				785C81AB2AB2824200AADBBF /* Products */,
@@ -90,17 +91,12 @@
 			isa = PBXGroup;
 			children = (
 				785C81C92AB3A87A00AADBBF /* model */,
-				785C81AD2AB2824200AADBBF /* AppDelegate.swift */,
-				785C81AF2AB2824200AADBBF /* SceneDelegate.swift */,
 				785C81CE2AB3B3C500AADBBF /* TableViewCell.swift */,
 				785C81B12AB2824200AADBBF /* ViewController.swift */,
 				785C81B32AB2824200AADBBF /* Main.storyboard */,
 				78BEC0492AD0D0F9001FB8AE /* ImageViewController.swift */,
 				78CCD1172AB923F000C0D4D9 /* StartViewController.swift */,
 				78BEC0472AD0B480001FB8AE /* IdigueImageView.swift */,
-				785C81B92AB2824300AADBBF /* Assets.xcassets */,
-				785C81B62AB2824200AADBBF /* IdigueApi.xcdatamodeld */,
-				785C81BB2AB2824300AADBBF /* LaunchScreen.storyboard */,
 				785C81BE2AB2824300AADBBF /* Info.plist */,
 				785C81C62AB39F7700AADBBF /* networkservices */,
 				78CCD1192ABA3E7D00C0D4D9 /* ImageDataPostModel.swift */,
@@ -137,6 +133,18 @@
 				78BEC04C2AD4B949001FB8AE /* IMG_1249.jpeg */,
 			);
 			path = pic;
+			sourceTree = "<group>";
+		};
+		78BEC04E2AD4D987001FB8AE /* support */ = {
+			isa = PBXGroup;
+			children = (
+				785C81AF2AB2824200AADBBF /* SceneDelegate.swift */,
+				785C81BB2AB2824300AADBBF /* LaunchScreen.storyboard */,
+				785C81AD2AB2824200AADBBF /* AppDelegate.swift */,
+				785C81B92AB2824300AADBBF /* Assets.xcassets */,
+				785C81B62AB2824200AADBBF /* IdigueApi.xcdatamodeld */,
+			);
+			path = support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

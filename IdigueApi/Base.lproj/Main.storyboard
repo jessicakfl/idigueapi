@@ -110,19 +110,29 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="O0e-Yl-5q9" firstAttribute="bottom" secondItem="sk3-1k-Fa1" secondAttribute="bottom" constant="5" id="M5P-xk-QXU"/>
+                            <constraint firstItem="sk3-1k-Fa1" firstAttribute="top" secondItem="O0e-Yl-5q9" secondAttribute="top" constant="20" id="MaU-T4-6yP"/>
                             <constraint firstItem="sk3-1k-Fa1" firstAttribute="top" secondItem="O0e-Yl-5q9" secondAttribute="top" constant="20" id="ZrH-oh-I6B"/>
+                            <constraint firstItem="sk3-1k-Fa1" firstAttribute="top" secondItem="O0e-Yl-5q9" secondAttribute="top" constant="20" id="exT-tg-0vm"/>
                             <constraint firstItem="O0e-Yl-5q9" firstAttribute="trailing" secondItem="sk3-1k-Fa1" secondAttribute="trailing" constant="5" id="fEA-nl-gcP"/>
                             <constraint firstItem="sk3-1k-Fa1" firstAttribute="leading" secondItem="O0e-Yl-5q9" secondAttribute="leading" constant="5" id="iWA-IK-qZT"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="VfX-A6-FOi"/>
+                    <navigationItem key="navigationItem" id="VfX-A6-FOi">
+                        <centerItemGroups>
+                            <barButtonItemGroup customizationDisposition="fixed" id="wlY-00-qQX">
+                                <barButtonItems>
+                                    <barButtonItem title="Item" id="dMV-AL-7fg"/>
+                                </barButtonItems>
+                            </barButtonItemGroup>
+                        </centerItemGroups>
+                    </navigationItem>
                     <connections>
                         <outlet property="idigueimageview" destination="sk3-1k-Fa1" id="JGe-ny-leg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FHW-sX-qdH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="857" y="639"/>
+            <point key="canvasLocation" x="807.24637681159425" y="889.28571428571422"/>
         </scene>
         <!--Start View Controller-->
         <scene sceneID="GpU-2y-GXj">
