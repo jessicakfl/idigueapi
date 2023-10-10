@@ -22,8 +22,11 @@ class ViewController: UIViewController {
                 let destination = segue.destination as? ImageViewController,
                 let selectedimage = tableView.indexPathForSelectedRow?.row
             {
-                destination.imagename = images![selectedimage].name!
-                destination.base64EncodedImageString = images![selectedimage].imagebinary!            }
+                if images?.isEmpty == false     {
+                    destination.imagename = images![selectedimage].name!
+                    destination.base64EncodedImageString = images![selectedimage].imagebinary!
+                }
+                }
         }
     
     @IBOutlet weak var tableView: UITableView!
