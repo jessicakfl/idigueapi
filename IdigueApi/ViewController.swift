@@ -185,6 +185,8 @@ class ViewController: UIViewController {
              
                if let md = success.images {
                    self.images = md
+                   // save to coredata
+                   
                }
                self.tableView.reloadData()
                
