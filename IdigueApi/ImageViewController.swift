@@ -12,14 +12,15 @@ import UIKit
 class ImageViewController: UIViewController {
     @IBOutlet weak var idigueimageview: IdigueImageView!
     
-    @IBOutlet weak var lblcontents: UILabel!
+    @IBOutlet weak var lblcontent: UILabel!
     var imagename=""
-    var contents=""
+    var contents="123"
     var base64EncodedImageString=""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        lblcontent.text=title
+        lblcontent.text=contents
         let view = UIView()
         view.backgroundColor = .white
         if let imageData =  Data(base64Encoded: base64EncodedImageString, options: .ignoreUnknownCharacters),     
@@ -33,7 +34,7 @@ class ImageViewController: UIViewController {
         myImageView.center = self.view.center
         
         myImageView.image = uiimage
-        
+            
         view.addSubview(myImageView)
         
         self.view = view

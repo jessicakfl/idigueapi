@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="f5C-1w-yWt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="f5C-1w-yWt">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -105,16 +105,26 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sk3-1k-Fa1" customClass="IdigueImageView" customModule="IdigueApi" customModuleProvider="target">
                                 <rect key="frame" x="5" y="76" width="404" height="756"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdv-en-6IC">
+                                <rect key="frame" x="96" y="130" width="284" height="358"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="O0e-Yl-5q9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="O0e-Yl-5q9" firstAttribute="bottom" secondItem="sk3-1k-Fa1" secondAttribute="bottom" constant="5" id="M5P-xk-QXU"/>
                             <constraint firstItem="sk3-1k-Fa1" firstAttribute="top" secondItem="O0e-Yl-5q9" secondAttribute="top" constant="20" id="MaU-T4-6yP"/>
+                            <constraint firstItem="O0e-Yl-5q9" firstAttribute="trailing" secondItem="pdv-en-6IC" secondAttribute="trailing" constant="34" id="Wpf-XI-DZF"/>
+                            <constraint firstItem="O0e-Yl-5q9" firstAttribute="bottom" secondItem="pdv-en-6IC" secondAttribute="bottom" constant="349" id="XbO-IM-USr"/>
                             <constraint firstItem="sk3-1k-Fa1" firstAttribute="top" secondItem="O0e-Yl-5q9" secondAttribute="top" constant="20" id="ZrH-oh-I6B"/>
+                            <constraint firstItem="pdv-en-6IC" firstAttribute="leading" secondItem="O0e-Yl-5q9" secondAttribute="leading" constant="96" id="Zwb-HJ-LtK"/>
                             <constraint firstItem="sk3-1k-Fa1" firstAttribute="top" secondItem="O0e-Yl-5q9" secondAttribute="top" constant="20" id="exT-tg-0vm"/>
                             <constraint firstItem="O0e-Yl-5q9" firstAttribute="trailing" secondItem="sk3-1k-Fa1" secondAttribute="trailing" constant="5" id="fEA-nl-gcP"/>
                             <constraint firstItem="sk3-1k-Fa1" firstAttribute="leading" secondItem="O0e-Yl-5q9" secondAttribute="leading" constant="5" id="iWA-IK-qZT"/>
+                            <constraint firstItem="pdv-en-6IC" firstAttribute="top" secondItem="O0e-Yl-5q9" secondAttribute="top" constant="74" id="j0I-CX-A3F"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="VfX-A6-FOi">
@@ -128,6 +138,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="idigueimageview" destination="sk3-1k-Fa1" id="JGe-ny-leg"/>
+                        <outlet property="lblcontent" destination="pdv-en-6IC" id="WqA-Md-4ZD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FHW-sX-qdH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
