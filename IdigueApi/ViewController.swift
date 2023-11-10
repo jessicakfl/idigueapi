@@ -6,8 +6,10 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController {
+    var coreDataStack: CoreDataStack!
     let imageSegueIdentifier = "showimage"
     private var images : [Image]? = []
     private var blogs : [Blog]? = []
@@ -47,7 +49,7 @@ class ViewController: UIViewController {
     }
  
     override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+           super.viewWillAppear(animated)
         title = "\(IdigueHttp.itemstoshow)"
         setupContainer()
         loadData()
@@ -176,7 +178,7 @@ class ViewController: UIViewController {
            self.tableView.separatorColor = UIColor.blue
        }
        
-       func loadData() {
+    func loadData() {
            switch IdigueHttp.itemstoshow {
            case "image":
            idiguehttp.getImageRequest() {
@@ -185,8 +187,12 @@ class ViewController: UIViewController {
              
                if let md = success.images {
                    self.images = md
-                   // save to coredata
-                   
+                   // save to coredata,
+                   do {
+                       try self.managedObjectContext.save()
+                      } catch let err {
+                          print(err.localizedDescription)
+                      }
                }
                self.tableView.reloadData()
                
@@ -325,5 +331,11 @@ extension  ViewController: UITableViewDataSource, UITableViewDelegate {
                 self.present(alertController, animated: true)
             }
         }
-    
+  
+}
+extension UIViewController {
+    var managedObjectContext: NSManagedObjectContext {
+        var coreDataStack = CoreDataStack()
+        return coreDataStack.managedObjectContext
+    }
 }

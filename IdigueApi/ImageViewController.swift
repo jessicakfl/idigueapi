@@ -6,12 +6,12 @@
 //
 
 import UIKit
-
+import CoreData
 
 
 class ImageViewController: UIViewController {
     @IBOutlet weak var idigueimageview: IdigueImageView!
-    
+    //@Environment(\.managedObjectContext) var context
     @IBOutlet weak var lblcontent: UILabel!
     var imagename=""
     var contents="123"
