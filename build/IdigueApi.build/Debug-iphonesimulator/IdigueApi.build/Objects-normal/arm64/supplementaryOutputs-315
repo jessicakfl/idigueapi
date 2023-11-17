@@ -1,0 +1,18 @@
+"/Users/jessicakfl/dev/IdigueApi/IdigueApi/model/Idigue.swift":
+  dependencies: "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Idigue.d"
+  swift-dependencies: "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Idigue.swiftdeps"
+  object: "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Idigue.o"
+  diagnostics: "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Idigue.dia"
+  const-values: "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Idigue.swiftconstvalues"
+"/Users/jessicakfl/dev/IdigueApi/coredata/Knowledgebasedb+CoreDataProperties.swift":
+  dependencies: "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Knowledgebasedb+CoreDataProperties.d"
+  const-values: "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Knowledgebasedb+CoreDataProperties.swiftconstvalues"
+  swift-dependencies: "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Knowledgebasedb+CoreDataProperties.swiftdeps"
+  diagnostics: "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Knowledgebasedb+CoreDataProperties.dia"
+  object: "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Knowledgebasedb+CoreDataProperties.o"
+"/Users/jessicakfl/dev/IdigueApi/coredata/Blogdb+CoreDataProperties.swift":
+  swift-dependencies: "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Blogdb+CoreDataProperties.swiftdeps"
+  diagnostics: "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Blogdb+CoreDataProperties.dia"
+  object: "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Blogdb+CoreDataProperties.o"
+  dependencies: "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Blogdb+CoreDataProperties.d"
+  const-values: "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Blogdb+CoreDataProperties.swiftconstvalues"

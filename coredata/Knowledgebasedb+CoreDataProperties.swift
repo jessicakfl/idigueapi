@@ -2,7 +2,7 @@
 //  Knowledgebasedb+CoreDataProperties.swift
 //  IdigueApi
 //
-//  Created by jessica bai on 10/11/23.
+//  Created by jessica bai on 11/16/23.
 //
 //
 
@@ -16,10 +16,10 @@ extension Knowledgebasedb {
         return NSFetchRequest<Knowledgebasedb>(entityName: "Knowledgebasedb")
     }
 
-    @NSManaged public var id: Int64
-    @NSManaged public var title: String?
     @NSManaged public var contents: String?
+    @NSManaged public var id: Int64
     @NSManaged public var timeofupdate: Date?
+    @NSManaged public var title: String?
 
 }
 

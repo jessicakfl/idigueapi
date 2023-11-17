@@ -10,10 +10,9 @@ import CoreData
 
 extension Imagedb {
     static func withid(id:Int64, context:NSManagedObjectContext)-> Imagedb {
-        let request = NSFetchRequest<Imagedb>(entityName: "imageb")
-        request.predicate = NSPredicate(format: "id", id)
-        request.sortDescriptors = [NSSortDescriptor(key: "name", ascending: true)]
-        let imgs = try? context.fetch(request)
+        let request = fetchRequest(NSPredicate(format: "id = %@", String(id)))
+       // request.sortDescriptors = [NSSortDescriptor(key: "name", ascending: true)]
+        let imgs = try? context.fetch(request) ?? []
         if let img = imgs?.first{
             return img
         }else{
@@ -31,5 +30,11 @@ extension Imagedb {
             try? context.save()
             
         }
+    }
+    static func fetchRequest(_ predicate: NSPredicate) -> NSFetchRequest<Imagedb> {
+        let request = NSFetchRequest<Imagedb>(entityName: "Imagedb")
+        request.sortDescriptors = [NSSortDescriptor(key: "name", ascending: true)]
+        request.predicate = predicate
+        return request
     }
 }

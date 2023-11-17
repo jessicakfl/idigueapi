@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     public var images : [Image]? = []
     private var blogs : [Blog]? = []
     private var knows : [Knowledgebase]? = []
+    let persistenceController = PersistenceController.shared
     
     @IBAction func btnBack(_ sender: Any) {
         self.navigationController?.dismiss(animated: true)
@@ -187,19 +188,17 @@ class ViewController: UIViewController {
              
                if let md = success.images {
                    self.images = md
-                   // save to coredata,
-                   //for image in md {
-                       //var iid=Int64(image.id!)
-                       //let img=Imagedb.withid(id:iid!,context: self.managedObjectContext)
-                       //Imagedb.update(image: image, context: self.managedObjectContext)
+                   for image in md {
+                       var iid=Int64(image.id!)
+                       let img=Imagedb.withid(id:iid!,context: PersistenceController.shared.container.viewContext)
+                       Imagedb.update(image: image, context: PersistenceController.shared.container.viewContext)
+                   }
                        
-                   //}
-                   
-                   do {
-                       try self.managedObjectContext.save()
-                      } catch let err {
-                          print(err.localizedDescription)
-                      }
+                       do {
+                           try PersistenceController.shared.container.viewContext.save()
+                       } catch let err {
+                           print(err.localizedDescription)
+                       }
                }
                self.tableView.reloadData()
                
@@ -340,9 +339,9 @@ extension  ViewController: UITableViewDataSource, UITableViewDelegate {
         }
   
 }
-extension UIViewController {
-    var managedObjectContext: NSManagedObjectContext {
-        var coreDataStack = CoreDataStack()
-        return coreDataStack.managedObjectContext
-    }
-}
+//extension UIViewController {
+ //   var managedObjectContext: NSManagedObjectContext {
+ //       var coreDataStack = CoreDataStack()
+//       return coreDataStack.managedObjectContext
+ //   }
+//}

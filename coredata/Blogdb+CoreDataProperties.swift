@@ -2,7 +2,7 @@
 //  Blogdb+CoreDataProperties.swift
 //  IdigueApi
 //
-//  Created by jessica bai on 10/11/23.
+//  Created by jessica bai on 11/16/23.
 //
 //
 
@@ -16,10 +16,10 @@ extension Blogdb {
         return NSFetchRequest<Blogdb>(entityName: "Blogdb")
     }
 
-    @NSManaged public var id: Int64
-    @NSManaged public var title: String?
     @NSManaged public var contents: String?
+    @NSManaged public var id: Int64
     @NSManaged public var timeofupdate: Date?
+    @NSManaged public var title: String?
 
 }
 

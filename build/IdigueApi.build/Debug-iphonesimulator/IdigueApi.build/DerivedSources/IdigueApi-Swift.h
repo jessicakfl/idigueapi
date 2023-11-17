@@ -328,10 +328,10 @@ SWIFT_CLASS_NAMED("Blogdb")
 @class NSDate;
 
 @interface Blogdb (SWIFT_EXTENSION(IdigueApi))
-@property (nonatomic) int64_t id;
-@property (nonatomic, copy) NSString * _Nullable title;
 @property (nonatomic, copy) NSString * _Nullable contents;
+@property (nonatomic) int64_t id;
 @property (nonatomic, copy) NSDate * _Nullable timeofupdate;
+@property (nonatomic, copy) NSString * _Nullable title;
 @end
 
 
@@ -384,8 +384,8 @@ SWIFT_CLASS_NAMED("Imagedb")
 
 @interface Imagedb (SWIFT_EXTENSION(IdigueApi))
 @property (nonatomic) int64_t id;
-@property (nonatomic, copy) NSString * _Nullable name;
 @property (nonatomic, copy) NSData * _Nullable imagebinary;
+@property (nonatomic, copy) NSString * _Nullable name;
 @property (nonatomic, copy) NSDate * _Nullable timeofupdate;
 @property (nonatomic) int64_t uid;
 @end
@@ -399,10 +399,10 @@ SWIFT_CLASS_NAMED("Knowledgebasedb")
 
 
 @interface Knowledgebasedb (SWIFT_EXTENSION(IdigueApi))
-@property (nonatomic) int64_t id;
-@property (nonatomic, copy) NSString * _Nullable title;
 @property (nonatomic, copy) NSString * _Nullable contents;
+@property (nonatomic) int64_t id;
 @property (nonatomic, copy) NSDate * _Nullable timeofupdate;
+@property (nonatomic, copy) NSString * _Nullable title;
 @end
 
 @class UIWindow;
@@ -448,7 +448,6 @@ SWIFT_CLASS("_TtC9IdigueApi13TableViewCell")
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
-
 
 @class UITableView;
 @class NSIndexPath;
