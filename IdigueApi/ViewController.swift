@@ -210,7 +210,17 @@ class ViewController: UIViewController {
                  
                    if let md = success.blogs {
                        self.blogs = md
-                   }
+                       for blog in md {
+                           var iid=Int64(blog.id!)
+                           let b=Imagedb.withid(id:iid!,context: PersistenceController.shared.container.viewContext)
+                           Blogdb.update(blog: blog, context: PersistenceController.shared.container.viewContext)
+                       }
+                           
+                           do {
+                               try PersistenceController.shared.container.viewContext.save()
+                           } catch let err {
+                               print(err.localizedDescription)
+                           }                   }
                    self.tableView.reloadData()
                    
                }
@@ -221,7 +231,17 @@ class ViewController: UIViewController {
                  
                    if let md = success.knows {
                        self.knows = md
-                   }
+                       for know in md {
+                           var iid=Int64(know.id!)
+                           let k=Knowledgebasedb.withid(id:iid!,context: PersistenceController.shared.container.viewContext)
+                           Knowledgebasedb.update(know: know, context: PersistenceController.shared.container.viewContext)
+                       }
+                           
+                           do {
+                               try PersistenceController.shared.container.viewContext.save()
+                           } catch let err {
+                               print(err.localizedDescription)
+                           }                    }
                    self.tableView.reloadData()               }
            default:
                idiguehttp.getImageRequest() {
@@ -339,9 +359,3 @@ extension  ViewController: UITableViewDataSource, UITableViewDelegate {
         }
   
 }
-//extension UIViewController {
- //   var managedObjectContext: NSManagedObjectContext {
- //       var coreDataStack = CoreDataStack()
-//       return coreDataStack.managedObjectContext
- //   }
-//}

@@ -11,7 +11,7 @@ import CoreData
 extension Imagedb {
     static func withid(id:Int64, context:NSManagedObjectContext)-> Imagedb {
         let request = fetchRequest(NSPredicate(format: "id = %@", String(id)))
-       // request.sortDescriptors = [NSSortDescriptor(key: "name", ascending: true)]
+        request.sortDescriptors = [NSSortDescriptor(key: "name", ascending: true)]
         let imgs = try? context.fetch(request) ?? []
         if let img = imgs?.first{
             return img

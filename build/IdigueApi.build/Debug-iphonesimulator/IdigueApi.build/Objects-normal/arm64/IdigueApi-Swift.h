@@ -322,6 +322,7 @@ SWIFT_CLASS_NAMED("Blogdb")
 @end
 
 
+
 @class NSString;
 @class NSDate;
 
@@ -393,6 +394,7 @@ SWIFT_CLASS_NAMED("Knowledgebasedb")
 @interface Knowledgebasedb : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 

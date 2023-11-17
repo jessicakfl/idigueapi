@@ -26,6 +26,8 @@
 		788574AB2B07099A00C8C835 /* Blogdb+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788574A52B07099A00C8C835 /* Blogdb+CoreDataClass.swift */; };
 		788574AC2B07099A00C8C835 /* Blogdb+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788574A62B07099A00C8C835 /* Blogdb+CoreDataProperties.swift */; };
 		788574AE2B070CD500C8C835 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788574AD2B070CD500C8C835 /* Persistence.swift */; };
+		788574B02B08166A00C8C835 /* Blogdb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788574AF2B08166A00C8C835 /* Blogdb.swift */; };
+		788574B22B08177300C8C835 /* Knowledgebasedb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788574B12B08177300C8C835 /* Knowledgebasedb.swift */; };
 		78BEC0482AD0B480001FB8AE /* IdigueImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BEC0472AD0B480001FB8AE /* IdigueImageView.swift */; };
 		78BEC04A2AD0D0F9001FB8AE /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BEC0492AD0D0F9001FB8AE /* ImageViewController.swift */; };
 		78BEC0522AD5E541001FB8AE /* ColorTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BEC0512AD5E541001FB8AE /* ColorTransformer.swift */; };
@@ -62,6 +64,8 @@
 		788574A52B07099A00C8C835 /* Blogdb+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Blogdb+CoreDataClass.swift"; sourceTree = "<group>"; };
 		788574A62B07099A00C8C835 /* Blogdb+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Blogdb+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		788574AD2B070CD500C8C835 /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		788574AF2B08166A00C8C835 /* Blogdb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blogdb.swift; sourceTree = "<group>"; };
+		788574B12B08177300C8C835 /* Knowledgebasedb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Knowledgebasedb.swift; sourceTree = "<group>"; };
 		78BEC0472AD0B480001FB8AE /* IdigueImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdigueImageView.swift; sourceTree = "<group>"; };
 		78BEC0492AD0D0F9001FB8AE /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		78BEC04C2AD4B949001FB8AE /* IMG_1249.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1249.jpeg; sourceTree = "<group>"; };
@@ -186,6 +190,8 @@
 				788574A62B07099A00C8C835 /* Blogdb+CoreDataProperties.swift */,
 				788574652AFC7C9F00C8C835 /* CoreDataStack.swift */,
 				7885746B2B05A76C00C8C835 /* Imagedb.swift */,
+				788574AF2B08166A00C8C835 /* Blogdb.swift */,
+				788574B12B08177300C8C835 /* Knowledgebasedb.swift */,
 			);
 			path = coredata;
 			sourceTree = "<group>";
@@ -272,7 +278,9 @@
 				78CCD1162AB91A0400C0D4D9 /* Knowledgebase.swift in Sources */,
 				785C81B22AB2824200AADBBF /* ViewController.swift in Sources */,
 				785C81C52AB39E5B00AADBBF /* IdigueApi.swift in Sources */,
+				788574B22B08177300C8C835 /* Knowledgebasedb.swift in Sources */,
 				785C81AE2AB2824200AADBBF /* AppDelegate.swift in Sources */,
+				788574B02B08166A00C8C835 /* Blogdb.swift in Sources */,
 				788574AA2B07099A00C8C835 /* Imagedb+CoreDataProperties.swift in Sources */,
 				785C81B02AB2824200AADBBF /* SceneDelegate.swift in Sources */,
 				788574AB2B07099A00C8C835 /* Blogdb+CoreDataClass.swift in Sources */,
