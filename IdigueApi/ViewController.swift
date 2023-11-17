@@ -11,7 +11,7 @@ import CoreData
 class ViewController: UIViewController {
     var coreDataStack: CoreDataStack!
     let imageSegueIdentifier = "showimage"
-    private var images : [Image]? = []
+    public var images : [Image]? = []
     private var blogs : [Blog]? = []
     private var knows : [Knowledgebase]? = []
     
@@ -188,6 +188,13 @@ class ViewController: UIViewController {
                if let md = success.images {
                    self.images = md
                    // save to coredata,
+                   //for image in md {
+                       //var iid=Int64(image.id!)
+                       //let img=Imagedb.withid(id:iid!,context: self.managedObjectContext)
+                       //Imagedb.update(image: image, context: self.managedObjectContext)
+                       
+                   //}
+                   
                    do {
                        try self.managedObjectContext.save()
                       } catch let err {

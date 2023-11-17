@@ -1,0 +1,278 @@
+{
+  "" : {
+    "diagnostics" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/IdigueApi-master.dia",
+    "emit-module-dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/IdigueApi-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/IdigueApi-master-emit-module.dia",
+    "swift-dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/IdigueApi-master.swiftdeps"
+  },
+  "/Users/jessicakfl/dev/IdigueApi/coredata/Blogdb+CoreDataClass.swift" : {
+    "const-values" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Blogdb+CoreDataClass.swiftconstvalues",
+    "dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Blogdb+CoreDataClass.d",
+    "diagnostics" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Blogdb+CoreDataClass.dia",
+    "index-unit-output-path" : "/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Blogdb+CoreDataClass.o",
+    "llvm-bc" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Blogdb+CoreDataClass.bc",
+    "object" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Blogdb+CoreDataClass.o",
+    "swift-dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Blogdb+CoreDataClass.swiftdeps",
+    "swiftmodule" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Blogdb+CoreDataClass~partial.swiftmodule"
+  },
+  "/Users/jessicakfl/dev/IdigueApi/coredata/Blogdb+CoreDataProperties.swift" : {
+    "const-values" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Blogdb+CoreDataProperties.swiftconstvalues",
+    "dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Blogdb+CoreDataProperties.d",
+    "diagnostics" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Blogdb+CoreDataProperties.dia",
+    "index-unit-output-path" : "/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Blogdb+CoreDataProperties.o",
+    "llvm-bc" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Blogdb+CoreDataProperties.bc",
+    "object" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Blogdb+CoreDataProperties.o",
+    "swift-dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Blogdb+CoreDataProperties.swiftdeps",
+    "swiftmodule" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Blogdb+CoreDataProperties~partial.swiftmodule"
+  },
+  "/Users/jessicakfl/dev/IdigueApi/coredata/CoreDataStack.swift" : {
+    "const-values" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/CoreDataStack.swiftconstvalues",
+    "dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/CoreDataStack.d",
+    "diagnostics" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/CoreDataStack.dia",
+    "index-unit-output-path" : "/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/CoreDataStack.o",
+    "llvm-bc" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/CoreDataStack.bc",
+    "object" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/CoreDataStack.o",
+    "swift-dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/CoreDataStack.swiftdeps",
+    "swiftmodule" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/CoreDataStack~partial.swiftmodule"
+  },
+  "/Users/jessicakfl/dev/IdigueApi/coredata/Imagedb.swift" : {
+    "const-values" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Imagedb-5b4f3777b3298f583a96e7ae4bd4aafb.swiftconstvalues",
+    "dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Imagedb-5b4f3777b3298f583a96e7ae4bd4aafb.d",
+    "diagnostics" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Imagedb-5b4f3777b3298f583a96e7ae4bd4aafb.dia",
+    "index-unit-output-path" : "/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Imagedb-5b4f3777b3298f583a96e7ae4bd4aafb.o",
+    "llvm-bc" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Imagedb-5b4f3777b3298f583a96e7ae4bd4aafb.bc",
+    "object" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Imagedb-5b4f3777b3298f583a96e7ae4bd4aafb.o",
+    "swift-dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Imagedb-5b4f3777b3298f583a96e7ae4bd4aafb.swiftdeps",
+    "swiftmodule" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Imagedb-5b4f3777b3298f583a96e7ae4bd4aafb~partial.swiftmodule"
+  },
+  "/Users/jessicakfl/dev/IdigueApi/coredata/Imagedb+CoreDataClass.swift" : {
+    "const-values" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Imagedb+CoreDataClass.swiftconstvalues",
+    "dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Imagedb+CoreDataClass.d",
+    "diagnostics" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Imagedb+CoreDataClass.dia",
+    "index-unit-output-path" : "/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Imagedb+CoreDataClass.o",
+    "llvm-bc" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Imagedb+CoreDataClass.bc",
+    "object" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Imagedb+CoreDataClass.o",
+    "swift-dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Imagedb+CoreDataClass.swiftdeps",
+    "swiftmodule" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Imagedb+CoreDataClass~partial.swiftmodule"
+  },
+  "/Users/jessicakfl/dev/IdigueApi/coredata/Imagedb+CoreDataProperties.swift" : {
+    "const-values" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Imagedb+CoreDataProperties.swiftconstvalues",
+    "dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Imagedb+CoreDataProperties.d",
+    "diagnostics" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Imagedb+CoreDataProperties.dia",
+    "index-unit-output-path" : "/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Imagedb+CoreDataProperties.o",
+    "llvm-bc" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Imagedb+CoreDataProperties.bc",
+    "object" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Imagedb+CoreDataProperties.o",
+    "swift-dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Imagedb+CoreDataProperties.swiftdeps",
+    "swiftmodule" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Imagedb+CoreDataProperties~partial.swiftmodule"
+  },
+  "/Users/jessicakfl/dev/IdigueApi/coredata/Knowledgebasedb+CoreDataClass.swift" : {
+    "const-values" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Knowledgebasedb+CoreDataClass.swiftconstvalues",
+    "dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Knowledgebasedb+CoreDataClass.d",
+    "diagnostics" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Knowledgebasedb+CoreDataClass.dia",
+    "index-unit-output-path" : "/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Knowledgebasedb+CoreDataClass.o",
+    "llvm-bc" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Knowledgebasedb+CoreDataClass.bc",
+    "object" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Knowledgebasedb+CoreDataClass.o",
+    "swift-dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Knowledgebasedb+CoreDataClass.swiftdeps",
+    "swiftmodule" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Knowledgebasedb+CoreDataClass~partial.swiftmodule"
+  },
+  "/Users/jessicakfl/dev/IdigueApi/coredata/Knowledgebasedb+CoreDataProperties.swift" : {
+    "const-values" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Knowledgebasedb+CoreDataProperties.swiftconstvalues",
+    "dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Knowledgebasedb+CoreDataProperties.d",
+    "diagnostics" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Knowledgebasedb+CoreDataProperties.dia",
+    "index-unit-output-path" : "/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Knowledgebasedb+CoreDataProperties.o",
+    "llvm-bc" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Knowledgebasedb+CoreDataProperties.bc",
+    "object" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Knowledgebasedb+CoreDataProperties.o",
+    "swift-dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Knowledgebasedb+CoreDataProperties.swiftdeps",
+    "swiftmodule" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Knowledgebasedb+CoreDataProperties~partial.swiftmodule"
+  },
+  "/Users/jessicakfl/dev/IdigueApi/coredataaddons/Imagedb.swift" : {
+    "const-values" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Imagedb-95204988d11da6b2ddf9c5568d5576fc.swiftconstvalues",
+    "dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Imagedb-95204988d11da6b2ddf9c5568d5576fc.d",
+    "diagnostics" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Imagedb-95204988d11da6b2ddf9c5568d5576fc.dia",
+    "index-unit-output-path" : "/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Imagedb-95204988d11da6b2ddf9c5568d5576fc.o",
+    "llvm-bc" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Imagedb-95204988d11da6b2ddf9c5568d5576fc.bc",
+    "object" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Imagedb-95204988d11da6b2ddf9c5568d5576fc.o",
+    "swift-dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Imagedb-95204988d11da6b2ddf9c5568d5576fc.swiftdeps",
+    "swiftmodule" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Imagedb-95204988d11da6b2ddf9c5568d5576fc~partial.swiftmodule"
+  },
+  "/Users/jessicakfl/dev/IdigueApi/IdigueApi/IdigueImageView.swift" : {
+    "const-values" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/IdigueImageView.swiftconstvalues",
+    "dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/IdigueImageView.d",
+    "diagnostics" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/IdigueImageView.dia",
+    "index-unit-output-path" : "/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/IdigueImageView.o",
+    "llvm-bc" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/IdigueImageView.bc",
+    "object" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/IdigueImageView.o",
+    "swift-dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/IdigueImageView.swiftdeps",
+    "swiftmodule" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/IdigueImageView~partial.swiftmodule"
+  },
+  "/Users/jessicakfl/dev/IdigueApi/IdigueApi/ImageDataPostModel.swift" : {
+    "const-values" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/ImageDataPostModel.swiftconstvalues",
+    "dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/ImageDataPostModel.d",
+    "diagnostics" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/ImageDataPostModel.dia",
+    "index-unit-output-path" : "/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/ImageDataPostModel.o",
+    "llvm-bc" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/ImageDataPostModel.bc",
+    "object" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/ImageDataPostModel.o",
+    "swift-dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/ImageDataPostModel.swiftdeps",
+    "swiftmodule" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/ImageDataPostModel~partial.swiftmodule"
+  },
+  "/Users/jessicakfl/dev/IdigueApi/IdigueApi/ImageViewController.swift" : {
+    "const-values" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/ImageViewController.swiftconstvalues",
+    "dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/ImageViewController.d",
+    "diagnostics" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/ImageViewController.dia",
+    "index-unit-output-path" : "/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/ImageViewController.o",
+    "llvm-bc" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/ImageViewController.bc",
+    "object" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/ImageViewController.o",
+    "swift-dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/ImageViewController.swiftdeps",
+    "swiftmodule" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/ImageViewController~partial.swiftmodule"
+  },
+  "/Users/jessicakfl/dev/IdigueApi/IdigueApi/model/Blog.swift" : {
+    "const-values" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Blog.swiftconstvalues",
+    "dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Blog.d",
+    "diagnostics" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Blog.dia",
+    "index-unit-output-path" : "/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Blog.o",
+    "llvm-bc" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Blog.bc",
+    "object" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Blog.o",
+    "swift-dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Blog.swiftdeps",
+    "swiftmodule" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Blog~partial.swiftmodule"
+  },
+  "/Users/jessicakfl/dev/IdigueApi/IdigueApi/model/BlogPost.swift" : {
+    "const-values" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/BlogPost.swiftconstvalues",
+    "dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/BlogPost.d",
+    "diagnostics" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/BlogPost.dia",
+    "index-unit-output-path" : "/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/BlogPost.o",
+    "llvm-bc" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/BlogPost.bc",
+    "object" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/BlogPost.o",
+    "swift-dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/BlogPost.swiftdeps",
+    "swiftmodule" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/BlogPost~partial.swiftmodule"
+  },
+  "/Users/jessicakfl/dev/IdigueApi/IdigueApi/model/Idigue.swift" : {
+    "const-values" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Idigue.swiftconstvalues",
+    "dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Idigue.d",
+    "diagnostics" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Idigue.dia",
+    "index-unit-output-path" : "/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Idigue.o",
+    "llvm-bc" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Idigue.bc",
+    "object" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Idigue.o",
+    "swift-dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Idigue.swiftdeps",
+    "swiftmodule" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Idigue~partial.swiftmodule"
+  },
+  "/Users/jessicakfl/dev/IdigueApi/IdigueApi/model/Image.swift" : {
+    "const-values" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Image.swiftconstvalues",
+    "dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Image.d",
+    "diagnostics" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Image.dia",
+    "index-unit-output-path" : "/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Image.o",
+    "llvm-bc" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Image.bc",
+    "object" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Image.o",
+    "swift-dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Image.swiftdeps",
+    "swiftmodule" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Image~partial.swiftmodule"
+  },
+  "/Users/jessicakfl/dev/IdigueApi/IdigueApi/model/ImagePost.swift" : {
+    "const-values" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/ImagePost.swiftconstvalues",
+    "dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/ImagePost.d",
+    "diagnostics" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/ImagePost.dia",
+    "index-unit-output-path" : "/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/ImagePost.o",
+    "llvm-bc" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/ImagePost.bc",
+    "object" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/ImagePost.o",
+    "swift-dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/ImagePost.swiftdeps",
+    "swiftmodule" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/ImagePost~partial.swiftmodule"
+  },
+  "/Users/jessicakfl/dev/IdigueApi/IdigueApi/model/Knowledgebase.swift" : {
+    "const-values" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Knowledgebase.swiftconstvalues",
+    "dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Knowledgebase.d",
+    "diagnostics" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Knowledgebase.dia",
+    "index-unit-output-path" : "/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Knowledgebase.o",
+    "llvm-bc" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Knowledgebase.bc",
+    "object" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Knowledgebase.o",
+    "swift-dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Knowledgebase.swiftdeps",
+    "swiftmodule" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Knowledgebase~partial.swiftmodule"
+  },
+  "/Users/jessicakfl/dev/IdigueApi/IdigueApi/model/KnowPost.swift" : {
+    "const-values" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/KnowPost.swiftconstvalues",
+    "dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/KnowPost.d",
+    "diagnostics" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/KnowPost.dia",
+    "index-unit-output-path" : "/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/KnowPost.o",
+    "llvm-bc" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/KnowPost.bc",
+    "object" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/KnowPost.o",
+    "swift-dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/KnowPost.swiftdeps",
+    "swiftmodule" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/KnowPost~partial.swiftmodule"
+  },
+  "/Users/jessicakfl/dev/IdigueApi/IdigueApi/networkservices/IdigueApi.swift" : {
+    "const-values" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/IdigueApi-3bfcba27eca2d5b4e71f2fdc2de2932f.swiftconstvalues",
+    "dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/IdigueApi-3bfcba27eca2d5b4e71f2fdc2de2932f.d",
+    "diagnostics" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/IdigueApi-3bfcba27eca2d5b4e71f2fdc2de2932f.dia",
+    "index-unit-output-path" : "/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/IdigueApi-3bfcba27eca2d5b4e71f2fdc2de2932f.o",
+    "llvm-bc" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/IdigueApi-3bfcba27eca2d5b4e71f2fdc2de2932f.bc",
+    "object" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/IdigueApi-3bfcba27eca2d5b4e71f2fdc2de2932f.o",
+    "swift-dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/IdigueApi-3bfcba27eca2d5b4e71f2fdc2de2932f.swiftdeps",
+    "swiftmodule" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/IdigueApi-3bfcba27eca2d5b4e71f2fdc2de2932f~partial.swiftmodule"
+  },
+  "/Users/jessicakfl/dev/IdigueApi/IdigueApi/networkservices/IdigueHttp.swift" : {
+    "const-values" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/IdigueHttp.swiftconstvalues",
+    "dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/IdigueHttp.d",
+    "diagnostics" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/IdigueHttp.dia",
+    "index-unit-output-path" : "/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/IdigueHttp.o",
+    "llvm-bc" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/IdigueHttp.bc",
+    "object" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/IdigueHttp.o",
+    "swift-dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/IdigueHttp.swiftdeps",
+    "swiftmodule" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/IdigueHttp~partial.swiftmodule"
+  },
+  "/Users/jessicakfl/dev/IdigueApi/IdigueApi/StartViewController.swift" : {
+    "const-values" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/StartViewController.swiftconstvalues",
+    "dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/StartViewController.d",
+    "diagnostics" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/StartViewController.dia",
+    "index-unit-output-path" : "/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/StartViewController.o",
+    "llvm-bc" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/StartViewController.bc",
+    "object" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/StartViewController.o",
+    "swift-dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/StartViewController.swiftdeps",
+    "swiftmodule" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/StartViewController~partial.swiftmodule"
+  },
+  "/Users/jessicakfl/dev/IdigueApi/IdigueApi/TableViewCell.swift" : {
+    "const-values" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/TableViewCell.swiftconstvalues",
+    "dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/TableViewCell.d",
+    "diagnostics" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/TableViewCell.dia",
+    "index-unit-output-path" : "/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/TableViewCell.o",
+    "llvm-bc" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/TableViewCell.bc",
+    "object" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/TableViewCell.o",
+    "swift-dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/TableViewCell.swiftdeps",
+    "swiftmodule" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/TableViewCell~partial.swiftmodule"
+  },
+  "/Users/jessicakfl/dev/IdigueApi/IdigueApi/ViewController.swift" : {
+    "const-values" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/ViewController.swiftconstvalues",
+    "dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/ViewController.d",
+    "diagnostics" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/ViewController.dia",
+    "index-unit-output-path" : "/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/ViewController.o",
+    "llvm-bc" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/ViewController.bc",
+    "object" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/ViewController.o",
+    "swift-dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/ViewController.swiftdeps",
+    "swiftmodule" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/ViewController~partial.swiftmodule"
+  },
+  "/Users/jessicakfl/dev/IdigueApi/support/AppDelegate.swift" : {
+    "const-values" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/AppDelegate.swiftconstvalues",
+    "dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/AppDelegate.d",
+    "diagnostics" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/AppDelegate.dia",
+    "index-unit-output-path" : "/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/AppDelegate.o",
+    "llvm-bc" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/AppDelegate.bc",
+    "object" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/AppDelegate.o",
+    "swift-dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/AppDelegate.swiftdeps",
+    "swiftmodule" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/AppDelegate~partial.swiftmodule"
+  },
+  "/Users/jessicakfl/dev/IdigueApi/support/ColorTransformer.swift" : {
+    "const-values" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/ColorTransformer.swiftconstvalues",
+    "dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/ColorTransformer.d",
+    "diagnostics" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/ColorTransformer.dia",
+    "index-unit-output-path" : "/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/ColorTransformer.o",
+    "llvm-bc" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/ColorTransformer.bc",
+    "object" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/ColorTransformer.o",
+    "swift-dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/ColorTransformer.swiftdeps",
+    "swiftmodule" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/ColorTransformer~partial.swiftmodule"
+  },
+  "/Users/jessicakfl/dev/IdigueApi/support/SceneDelegate.swift" : {
+    "const-values" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/SceneDelegate.swiftconstvalues",
+    "dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/SceneDelegate.d",
+    "diagnostics" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/SceneDelegate.dia",
+    "index-unit-output-path" : "/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/SceneDelegate.o",
+    "llvm-bc" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/SceneDelegate.bc",
+    "object" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/SceneDelegate.o",
+    "swift-dependencies" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/SceneDelegate.swiftdeps",
+    "swiftmodule" : "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/SceneDelegate~partial.swiftmodule"
+  }
+}

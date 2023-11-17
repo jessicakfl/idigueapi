@@ -1,0 +1,18 @@
+"/Users/jessicakfl/dev/IdigueApi/IdigueApi/IdigueImageView.swift":
+  swift-dependencies: "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/IdigueImageView.swiftdeps"
+  dependencies: "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/IdigueImageView.d"
+  object: "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/IdigueImageView.o"
+  const-values: "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/IdigueImageView.swiftconstvalues"
+  diagnostics: "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/IdigueImageView.dia"
+"/Users/jessicakfl/dev/IdigueApi/IdigueApi/model/Image.swift":
+  diagnostics: "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Image.dia"
+  dependencies: "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Image.d"
+  object: "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Image.o"
+  const-values: "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Image.swiftconstvalues"
+  swift-dependencies: "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/Image.swiftdeps"
+"/Users/jessicakfl/dev/IdigueApi/IdigueApi/model/BlogPost.swift":
+  const-values: "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/BlogPost.swiftconstvalues"
+  object: "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/BlogPost.o"
+  dependencies: "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/BlogPost.d"
+  swift-dependencies: "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/BlogPost.swiftdeps"
+  diagnostics: "/Users/jessicakfl/dev/IdigueApi/build/IdigueApi.build/Debug-iphonesimulator/IdigueApi.build/Objects-normal/arm64/BlogPost.dia"
