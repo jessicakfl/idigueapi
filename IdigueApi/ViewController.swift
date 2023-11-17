@@ -212,7 +212,7 @@ class ViewController: UIViewController {
                        self.blogs = md
                        for blog in md {
                            var iid=Int64(blog.id!)
-                           let b=Imagedb.withid(id:iid!,context: PersistenceController.shared.container.viewContext)
+                           Imagedb.withid(id:iid!,context: PersistenceController.shared.container.viewContext)
                            Blogdb.update(blog: blog, context: PersistenceController.shared.container.viewContext)
                        }
                            
@@ -233,7 +233,7 @@ class ViewController: UIViewController {
                        self.knows = md
                        for know in md {
                            var iid=Int64(know.id!)
-                           let k=Knowledgebasedb.withid(id:iid!,context: PersistenceController.shared.container.viewContext)
+                           Knowledgebasedb.withid(id:iid!,context: PersistenceController.shared.container.viewContext)
                            Knowledgebasedb.update(know: know, context: PersistenceController.shared.container.viewContext)
                        }
                            
